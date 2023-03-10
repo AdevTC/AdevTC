@@ -1,5 +1,7 @@
-### Hi there 👋
-
+<div id="header" align="center">
+  <img src="https://imgur.com/BHkiSf9" width="200" />
+  <h1 align="center">Buenas 👋, mi nombre es Adrián</h1>
+  <h3 align="center">
 <!--
 **adriantomascerda/adriantomascerda** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
