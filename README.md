@@ -1,7 +1,13 @@
 <div id="header" align="center">
-  <img src="https://imgur.com/BHkiSf9" width="200" />
+  <img src="https://i.postimg.cc/rmRtHqpQ/bannergif.gif" width="100%" />
   <h1 align="center">Buenas 👋, mi nombre es Adrián</h1>
-  <h3 align="center">
+  <h3 align="justify">Soy un apasionado desarrollador fullstack de España. Me gusta dedicar mucho tiempo a mis proyectos e iré publicando todos estos aquí, en GitHub.
+</div>
+
+
+
+
+
 <!--
 **adriantomascerda/adriantomascerda** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
