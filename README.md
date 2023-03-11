@@ -1,4 +1,6 @@
 <div id="header" align="center">
+  # ![https://mouredev.com](https://raw.githubusercontent.com/mouredev/mouredev/master/mouredev_emote.png) Hola, mi nombre es Brais Moure 👋
+### Freelance full-stack iOS & Android engineer
   <h1 align="center">Buenas 👋, mi nombre es Adrián</h1>
   <h2 align="justify">Full Stack Developer</h2>
   <img src="https://i.postimg.cc/rmRtHqpQ/bannergif.gif" width="100%" />
