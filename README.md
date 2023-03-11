@@ -9,7 +9,7 @@
 ---
   ### Un poco más sobre mí:
 
-- 🤓  Estudiando: **DAM** at [Cesur](https://www.cesurformacion.com/centros/madrid/plaza-eliptica).
+- 🤓  Estudiando: **DAM** en el centro [Cesur](https://www.cesurformacion.com/centros/madrid/plaza-eliptica)
 - ⌨️  Aprendiendo actualmente: **Python, Angular, MongoDB**
 - 🌍 Portfolio: **En proceso de creación**
 - 🎶 Aficiones: **Música y videojuegos**
