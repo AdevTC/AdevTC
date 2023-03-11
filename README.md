@@ -5,8 +5,9 @@
 </div>
 <!-- Social icons section -->
 <p align="center">
-  <a href="https://github.com/AdevTC"><img width="32px" alt="GitHub" title="GitHub" src="https://i.postimg.cc/sDwnvBnq/github.png"/></a>
-  <a href="https://www.linkedin.com/in/adriantomascerda/"><img width="32px" alt="Linkedin" title="Linkedin" src="https://i.postimg.cc/NjFdTgSM/icons8-linkedin-circled-512.png"/></a>
+  <a href="https://github.com/AdevTC"><img width="64px" alt="GitHub" title="GitHub" src="https://i.postimg.cc/sDwnvBnq/github.png"/></a>
+  <a href="https://www.linkedin.com/in/adriantomascerda/"><img width="64px" alt="Linkedin" title="Linkedin" src="https://i.postimg.cc/NjFdTgSM/icons8-linkedin-circled-512.png"/></a>
+  <a href="https://mail.google.com/"><img width="64px" alt="adriantomascv@gmail.com" title="Correo" src="https://i.postimg.cc/FKc8drkS/icons8-gmail-logo-512.png"/></a>
 </p>
 
 
