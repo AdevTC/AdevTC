@@ -14,7 +14,7 @@
 - 🌍 Portfolio: **En proceso de creación**
 - 🎶 Aficiones: **Música y videojuegos**
 ---
-### Mis lenguajes y herramientas más usados:
+### Lenguajes más usados:
 <div id="languages" align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" title="Java" alt="Java" height="40px" width="40px"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" title="Python" alt="Python" height="40px" width="40px"/>
