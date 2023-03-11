@@ -3,7 +3,9 @@
 <h3 align="left"> Desarrollador Full-Stack 👨‍💻 
   <br/><br/>
   <img src="https://i.postimg.cc/rmRtHqpQ/bannergif.gif" width="100%" />
-  <h5 align="justify">¡Hola! Soy Adrián, un estudiante de desarrollo de aplicaciones multiplataforma con experiencia en Java, Python, MySQL, Git, Android, Kotlin, HTML5, CSS, JavaScript, React, Angular... Me apasiona la programación y el desarrollo de soluciones innovadoras que mejoran la experiencia del usuario. Actualmente estoy enfocado en mejorar mis habilidades como programador full stack y en construir aplicaciones web y móviles atractivas y funcionales. Siempre estoy en busca de nuevos desafíos y oportunidades para aprender y crecer como desarrollador. ¡Bienvenido a mi perfil de GitHub!
+  <h4 align="justify">¡Hola! Soy Adrián, un estudiante de desarrollo de aplicaciones multiplataforma con experiencia en Java, Python, MySQL, Git, Android, Kotlin, HTML5, CSS, JavaScript, React, Angular... Me apasiona la programación y el desarrollo de soluciones innovadoras que mejoran la experiencia del usuario. Actualmente estoy enfocado en mejorar mis habilidades como programador full stack y en construir aplicaciones web y móviles atractivas y funcionales. Siempre estoy en busca de nuevos desafíos y oportunidades para aprender y crecer como desarrollador. ¡Bienvenido a mi perfil de GitHub!
+<h3 align="left"> Por aquí abajo te dejo formas de contactarme por si quieres o necesitas consultarme algo ⬇️⬇️⬇️
+    <br/><br/>
     
 <!-- Social icons section -->
 <p align="center">
