@@ -1,6 +1,6 @@
 <div id="header" align="center">
   <h1 align="center">Buenas 👋, mi nombre es Adrián</h1>
-  ### Full Stack Developer
+  <h2 align="justify">Full Stack Developer</h2>
   <img src="https://i.postimg.cc/rmRtHqpQ/bannergif.gif" width="100%" />
 
   <h3 align="justify">Soy un apasionado desarrollador fullstack de España. Me gusta dedicar mucho tiempo a mis proyectos e iré publicando todos estos aquí, en GitHub.
