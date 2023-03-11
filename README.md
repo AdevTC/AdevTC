@@ -1,9 +1,10 @@
-# Buenas 👋, mi nombre es Adrián
-### Full Stack Developer
+<!-- Intro section -->
+<h1 align="center"> Bienvenid@ a mi GitHub, mi nombre es Adrián 👋🏼
+<h3 align="left"> Desarrollador Full-Stack 👨‍💻 
+  <br/><br/>
   <img src="https://i.postimg.cc/rmRtHqpQ/bannergif.gif" width="100%" />
-
-  <h3 align="justify">Soy un apasionado desarrollador full stack español. Me gusta dedicar mucho tiempo a mis proyectos e iré publicando todos estos aquí, en GitHub.
-
+  <h5 align="justify">¡Hola! Soy Adrián, un estudiante de desarrollo de aplicaciones multiplataforma con experiencia en Java, Python, MySQL, Git, Android, Kotlin, HTML5, CSS, JavaScript, React, Angular... Me apasiona la programación y el desarrollo de soluciones innovadoras que mejoran la experiencia del usuario. Actualmente estoy enfocado en mejorar mis habilidades como programador full stack y en construir aplicaciones web y móviles atractivas y funcionales. Siempre estoy en busca de nuevos desafíos y oportunidades para aprender y crecer como desarrollador. ¡Bienvenido a mi perfil de GitHub!
+    
 <!-- Social icons section -->
 <p align="center">
   <a href="https://github.com/AdevTC"><img width="64px" alt="GitHub" title="GitHub" src="https://i.postimg.cc/sDwnvBnq/github.png"/></a>
