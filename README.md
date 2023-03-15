@@ -1,6 +1,6 @@
 ---
 <!-- Intro section -->
-<h1 align="center"> Bienvenid@ a mi GitHub, mi nombre es Adrián 👋🏼
+<h1 align="center"> Welcome to my GitHub, my name is Adrián 👋🏼
 <h3 align="left"> Full Stack Developer 👨‍💻 
   <br/><br/>
   <img src="https://i.postimg.cc/rmRtHqpQ/bannergif.gif" width="100%" />
