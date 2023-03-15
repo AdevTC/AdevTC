@@ -4,17 +4,17 @@
 <h3 align="left"> Desarrollador Full-Stack 👨‍💻 
   <br/><br/>
   <img src="https://i.postimg.cc/rmRtHqpQ/bannergif.gif" width="100%" />
-  <h4 align="justify">¡Hola! Soy Adrián, un estudiante de desarrollo de aplicaciones multiplataforma con experiencia en Java, Python, MySQL, Git, Android, Kotlin, HTML5, CSS, JavaScript, React, Angular... Me apasiona la programación y el desarrollo de soluciones innovadoras que mejoran la experiencia del usuario. Actualmente estoy enfocado en mejorar mis habilidades como programador full stack y en construir aplicaciones web y móviles atractivas y funcionales. Siempre estoy en busca de nuevos desafíos y oportunidades para aprender y crecer como desarrollador. ¡Bienvenido a mi perfil de GitHub!
+  <h4 align="justify">Hello! I'm Adrián, a multiplatform application development student with experience in Java, Python, MySQL, Git, Android, Kotlin, HTML5, CSS, JavaScript, React, Angular... I'm passionate about programming and developing innovative solutions that improve the user experience. Currently, I'm focused on improving my skills as a full-stack developer and building attractive and functional web and mobile applications. I'm always looking for new challenges and opportunities to learn and grow as a developer. Welcome to my GitHub profile!
 
 ---
-  ### Un poco más sobre mí:
+  ### A little more about me:
 
-- 🤓  Estudiando: **DAM** en el centro [Cesur](https://www.cesurformacion.com/centros/madrid/plaza-eliptica)
-- ⌨️  Aprendiendo actualmente: **Python, Angular, MongoDB**
-- 🌍 Portfolio: **En proceso de creación**
-- 🎶 Aficiones: **Música y videojuegos**
+- 🤓  Studying: DAM at Cesur center
+- ⌨️  Currently learning: Python, Angular, MongoDB
+- 🌍 Portfolio: In the process of creation
+- 🎶 Hobbies: Music and video games
 ---
-### Lenguajes más usados:
+### The languages I use most frequently:
 <div id="languages" align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" title="Java" alt="Java" height="40px" width="40px"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" title="Python" alt="Python" height="40px" width="40px"/>
@@ -53,7 +53,7 @@
     
 ---
     
-<h3 align="left"> Por aquí abajo te dejo formas de contactarme por si quieres o necesitas consultarme algo ⬇️⬇️⬇️<br/><br/>
+<h3 align="left"> Down here, I leave you ways to contact me in case you want or need to ask me something ⬇️⬇️⬇️<br/><br/>
   <!-- Social icons section -->
 <p align="center">
   <a href="https://github.com/AdevTC"><img width="64px" alt="GitHub" title="GitHub" src="https://i.postimg.cc/sDwnvBnq/github.png"/></a>
