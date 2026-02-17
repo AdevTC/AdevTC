@@ -10,7 +10,7 @@
   <a href="mailto:adriantomascv@gmail.com">
     <img src="https://img.shields.io/badge/Email-Contact_Me-red?style=for-the-badge&logo=gmail" alt="Email" />
   </a>
-  <a href="https://tu-portfolio-url.com">
+  <a href="https://adriantomascerda.vercel.app">
     <img src="https://img.shields.io/badge/Portfolio-Visit_Website-black?style=for-the-badge&logo=vercel" alt="Portfolio" />
   </a>
 </p>
@@ -63,9 +63,17 @@ Mi enfoque combina la robustez del mundo empresarial (SAP, Java, Arquitecturas d
 ### 📊 GitHub Stats
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=AdevTC&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117" alt="Adrián's GitHub Stats" />
-  <br/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AdevTC&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117" alt="Top Languages" />
+  <a href="https://github.com/anuraghazra/github-readme-stats">
+    <img height="180em" src="https://github-readme-stats-fast.vercel.app/api?username=AdevTC&show_icons=true&theme=transparent&hide_border=true&title_color=007ACC&text_color=999&icon_color=007ACC" alt="Adrián's Stats" />
+  </a>
+  <a href="https://github.com/DenverCoder1/github-readme-streak-stats">
+    <img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=AdevTC&theme=transparent&hide_border=true&stroke=007ACC&ring=007ACC&fire=007ACC&currStreakNum=999&sideNums=999&currStreakLabel=007ACC" alt="Adrián's Streak" />
+  </a>
+</div>
+<div align="center">
+  <a href="https://github.com/anuraghazra/github-readme-stats">
+    <img height="180em" src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=AdevTC&layout=compact&theme=transparent&hide_border=true&title_color=007ACC&text_color=999&icon_color=007ACC" alt="Top Languages" />
+  </a>
 </div>
 
 ---
