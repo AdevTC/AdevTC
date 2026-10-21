@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="110" viewBox="0 0 1280 110" role="img" aria-labelledby="title">
+<title id="title">AdevTC. De la idea a la integración. Del código a la experiencia.</title>
+
+<rect x="1" y="1" width="1278" height="108" rx="18" fill="#F4F8FB" stroke="#CDDFE8" />
+<rect x="32" y="34" width="4" height="42" rx="2" fill="#007F86" />
+<g font-family="Arial, Helvetica, sans-serif">
+ <text x="57" y="64" font-size="23" font-weight="700" letter-spacing="2" fill="#10283E">ADEVTC</text>
+ <text x="1230" y="64" text-anchor="end" font-size="23" fill="#4C6377">De la idea a la integración. Del código a la experiencia.</text>
+</g>
+</svg>

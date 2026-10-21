@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="158" height="40" viewBox="0 0 158 40" role="img" aria-labelledby="title">
+<title id="title">LINKEDIN</title>
+
+<rect x="0.5" y="0.5" width="157" height="39" rx="10" fill="#15243A" stroke="#355068" />
+<path d="M23 19V29M23 14V14.2M29 29V19M29 23C29 18 37 18 37 23V29" fill="none" stroke="#F4F8FC" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<text x="51" y="25.5" fill="#F4F8FC" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="1.1">LINKEDIN</text>
+</svg>

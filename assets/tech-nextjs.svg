@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="94" height="30" viewBox="0 0 94 30" role="img" aria-labelledby="title">
+<title id="title">Next.js</title>
+
+<rect x="0.5" y="0.5" width="93" height="29" rx="7" fill="#111E30" stroke="#355068" />
+<circle cx="15" cy="15" r="3.5" fill="#F7FAFC" />
+<text x="27" y="19.7" fill="#F2F7FC" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="600">Next.js</text>
+</svg>

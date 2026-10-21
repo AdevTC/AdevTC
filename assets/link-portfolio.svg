@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="168" height="40" viewBox="0 0 168 40" role="img" aria-labelledby="title">
+<title id="title">PORTFOLIO</title>
+
+<rect x="0.5" y="0.5" width="167" height="39" rx="10" fill="#07E3E3" stroke="#355068" />
+<path d="M22 13H38V27H22ZM22 17H38M26 13V27" fill="none" stroke="#06232B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+<text x="51" y="25.5" fill="#06232B" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="1.1">PORTFOLIO</text>
+</svg>

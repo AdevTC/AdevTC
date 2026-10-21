@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="30" viewBox="0 0 120 30" role="img" aria-labelledby="title">
+<title id="title">TypeScript</title>
+
+<rect x="0.5" y="0.5" width="119" height="29" rx="7" fill="#111E30" stroke="#355068" />
+<circle cx="15" cy="15" r="3.5" fill="#54A5FF" />
+<text x="27" y="19.7" fill="#F2F7FC" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="600">TypeScript</text>
+</svg>

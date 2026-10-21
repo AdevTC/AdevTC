@@ -1,0 +1,256 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="464" viewBox="0 0 1280 464" role="img" aria-labelledby="title">
+<title id="title">Adrián Tomás Cerdá. Conecto sistemas. Construyo soluciones.</title>
+
+<defs>
+ <linearGradient id="wash" x1="0" y1="0" x2="1" y2="1">
+  <stop stop-color="#E6F1F5" /><stop offset="1" stop-color="#F4F8FB" />
+ </linearGradient>
+ <linearGradient id="signal" x1="0" x2="1">
+  <stop stop-color="#007F86" stop-opacity="0" /><stop offset="0.5" stop-color="#007F86" /><stop offset="1" stop-color="#007F86" stop-opacity="0" />
+ </linearGradient>
+</defs>
+<rect x="1" y="1" width="1278" height="462" rx="28" fill="#F4F8FB" stroke="#CDDFE8" stroke-width="2" />
+<path d="M780 1H1252Q1279 1 1279 28V436Q1279 463 1252 463H930Z" fill="url(#wash)" />
+<circle cx="814" cy="74" r="1.2" fill="#CDDFE8" />
+<circle cx="814" cy="102" r="1.2" fill="#CDDFE8" />
+<circle cx="814" cy="130" r="1.2" fill="#CDDFE8" />
+<circle cx="814" cy="158" r="1.2" fill="#CDDFE8" />
+<circle cx="814" cy="186" r="1.2" fill="#CDDFE8" />
+<circle cx="814" cy="214" r="1.2" fill="#CDDFE8" />
+<circle cx="814" cy="242" r="1.2" fill="#CDDFE8" />
+<circle cx="814" cy="270" r="1.2" fill="#CDDFE8" />
+<circle cx="814" cy="298" r="1.2" fill="#CDDFE8" />
+<circle cx="814" cy="326" r="1.2" fill="#CDDFE8" />
+<circle cx="814" cy="354" r="1.2" fill="#CDDFE8" />
+<circle cx="814" cy="382" r="1.2" fill="#CDDFE8" />
+<circle cx="814" cy="410" r="1.2" fill="#CDDFE8" />
+<circle cx="842" cy="74" r="1.2" fill="#CDDFE8" />
+<circle cx="842" cy="102" r="1.2" fill="#CDDFE8" />
+<circle cx="842" cy="130" r="1.2" fill="#CDDFE8" />
+<circle cx="842" cy="158" r="1.2" fill="#CDDFE8" />
+<circle cx="842" cy="186" r="1.2" fill="#CDDFE8" />
+<circle cx="842" cy="214" r="1.2" fill="#CDDFE8" />
+<circle cx="842" cy="242" r="1.2" fill="#CDDFE8" />
+<circle cx="842" cy="270" r="1.2" fill="#CDDFE8" />
+<circle cx="842" cy="298" r="1.2" fill="#CDDFE8" />
+<circle cx="842" cy="326" r="1.2" fill="#CDDFE8" />
+<circle cx="842" cy="354" r="1.2" fill="#CDDFE8" />
+<circle cx="842" cy="382" r="1.2" fill="#CDDFE8" />
+<circle cx="842" cy="410" r="1.2" fill="#CDDFE8" />
+<circle cx="870" cy="74" r="1.2" fill="#CDDFE8" />
+<circle cx="870" cy="102" r="1.2" fill="#CDDFE8" />
+<circle cx="870" cy="130" r="1.2" fill="#CDDFE8" />
+<circle cx="870" cy="158" r="1.2" fill="#CDDFE8" />
+<circle cx="870" cy="186" r="1.2" fill="#CDDFE8" />
+<circle cx="870" cy="214" r="1.2" fill="#CDDFE8" />
+<circle cx="870" cy="242" r="1.2" fill="#CDDFE8" />
+<circle cx="870" cy="270" r="1.2" fill="#CDDFE8" />
+<circle cx="870" cy="298" r="1.2" fill="#CDDFE8" />
+<circle cx="870" cy="326" r="1.2" fill="#CDDFE8" />
+<circle cx="870" cy="354" r="1.2" fill="#CDDFE8" />
+<circle cx="870" cy="382" r="1.2" fill="#CDDFE8" />
+<circle cx="870" cy="410" r="1.2" fill="#CDDFE8" />
+<circle cx="898" cy="74" r="1.2" fill="#CDDFE8" />
+<circle cx="898" cy="102" r="1.2" fill="#CDDFE8" />
+<circle cx="898" cy="130" r="1.2" fill="#CDDFE8" />
+<circle cx="898" cy="158" r="1.2" fill="#CDDFE8" />
+<circle cx="898" cy="186" r="1.2" fill="#CDDFE8" />
+<circle cx="898" cy="214" r="1.2" fill="#CDDFE8" />
+<circle cx="898" cy="242" r="1.2" fill="#CDDFE8" />
+<circle cx="898" cy="270" r="1.2" fill="#CDDFE8" />
+<circle cx="898" cy="298" r="1.2" fill="#CDDFE8" />
+<circle cx="898" cy="326" r="1.2" fill="#CDDFE8" />
+<circle cx="898" cy="354" r="1.2" fill="#CDDFE8" />
+<circle cx="898" cy="382" r="1.2" fill="#CDDFE8" />
+<circle cx="898" cy="410" r="1.2" fill="#CDDFE8" />
+<circle cx="926" cy="74" r="1.2" fill="#CDDFE8" />
+<circle cx="926" cy="102" r="1.2" fill="#CDDFE8" />
+<circle cx="926" cy="130" r="1.2" fill="#CDDFE8" />
+<circle cx="926" cy="158" r="1.2" fill="#CDDFE8" />
+<circle cx="926" cy="186" r="1.2" fill="#CDDFE8" />
+<circle cx="926" cy="214" r="1.2" fill="#CDDFE8" />
+<circle cx="926" cy="242" r="1.2" fill="#CDDFE8" />
+<circle cx="926" cy="270" r="1.2" fill="#CDDFE8" />
+<circle cx="926" cy="298" r="1.2" fill="#CDDFE8" />
+<circle cx="926" cy="326" r="1.2" fill="#CDDFE8" />
+<circle cx="926" cy="354" r="1.2" fill="#CDDFE8" />
+<circle cx="926" cy="382" r="1.2" fill="#CDDFE8" />
+<circle cx="926" cy="410" r="1.2" fill="#CDDFE8" />
+<circle cx="954" cy="74" r="1.2" fill="#CDDFE8" />
+<circle cx="954" cy="102" r="1.2" fill="#CDDFE8" />
+<circle cx="954" cy="130" r="1.2" fill="#CDDFE8" />
+<circle cx="954" cy="158" r="1.2" fill="#CDDFE8" />
+<circle cx="954" cy="186" r="1.2" fill="#CDDFE8" />
+<circle cx="954" cy="214" r="1.2" fill="#CDDFE8" />
+<circle cx="954" cy="242" r="1.2" fill="#CDDFE8" />
+<circle cx="954" cy="270" r="1.2" fill="#CDDFE8" />
+<circle cx="954" cy="298" r="1.2" fill="#CDDFE8" />
+<circle cx="954" cy="326" r="1.2" fill="#CDDFE8" />
+<circle cx="954" cy="354" r="1.2" fill="#CDDFE8" />
+<circle cx="954" cy="382" r="1.2" fill="#CDDFE8" />
+<circle cx="954" cy="410" r="1.2" fill="#CDDFE8" />
+<circle cx="982" cy="74" r="1.2" fill="#CDDFE8" />
+<circle cx="982" cy="102" r="1.2" fill="#CDDFE8" />
+<circle cx="982" cy="130" r="1.2" fill="#CDDFE8" />
+<circle cx="982" cy="158" r="1.2" fill="#CDDFE8" />
+<circle cx="982" cy="186" r="1.2" fill="#CDDFE8" />
+<circle cx="982" cy="214" r="1.2" fill="#CDDFE8" />
+<circle cx="982" cy="242" r="1.2" fill="#CDDFE8" />
+<circle cx="982" cy="270" r="1.2" fill="#CDDFE8" />
+<circle cx="982" cy="298" r="1.2" fill="#CDDFE8" />
+<circle cx="982" cy="326" r="1.2" fill="#CDDFE8" />
+<circle cx="982" cy="354" r="1.2" fill="#CDDFE8" />
+<circle cx="982" cy="382" r="1.2" fill="#CDDFE8" />
+<circle cx="982" cy="410" r="1.2" fill="#CDDFE8" />
+<circle cx="1010" cy="74" r="1.2" fill="#CDDFE8" />
+<circle cx="1010" cy="102" r="1.2" fill="#CDDFE8" />
+<circle cx="1010" cy="130" r="1.2" fill="#CDDFE8" />
+<circle cx="1010" cy="158" r="1.2" fill="#CDDFE8" />
+<circle cx="1010" cy="186" r="1.2" fill="#CDDFE8" />
+<circle cx="1010" cy="214" r="1.2" fill="#CDDFE8" />
+<circle cx="1010" cy="242" r="1.2" fill="#CDDFE8" />
+<circle cx="1010" cy="270" r="1.2" fill="#CDDFE8" />
+<circle cx="1010" cy="298" r="1.2" fill="#CDDFE8" />
+<circle cx="1010" cy="326" r="1.2" fill="#CDDFE8" />
+<circle cx="1010" cy="354" r="1.2" fill="#CDDFE8" />
+<circle cx="1010" cy="382" r="1.2" fill="#CDDFE8" />
+<circle cx="1010" cy="410" r="1.2" fill="#CDDFE8" />
+<circle cx="1038" cy="74" r="1.2" fill="#CDDFE8" />
+<circle cx="1038" cy="102" r="1.2" fill="#CDDFE8" />
+<circle cx="1038" cy="130" r="1.2" fill="#CDDFE8" />
+<circle cx="1038" cy="158" r="1.2" fill="#CDDFE8" />
+<circle cx="1038" cy="186" r="1.2" fill="#CDDFE8" />
+<circle cx="1038" cy="214" r="1.2" fill="#CDDFE8" />
+<circle cx="1038" cy="242" r="1.2" fill="#CDDFE8" />
+<circle cx="1038" cy="270" r="1.2" fill="#CDDFE8" />
+<circle cx="1038" cy="298" r="1.2" fill="#CDDFE8" />
+<circle cx="1038" cy="326" r="1.2" fill="#CDDFE8" />
+<circle cx="1038" cy="354" r="1.2" fill="#CDDFE8" />
+<circle cx="1038" cy="382" r="1.2" fill="#CDDFE8" />
+<circle cx="1038" cy="410" r="1.2" fill="#CDDFE8" />
+<circle cx="1066" cy="74" r="1.2" fill="#CDDFE8" />
+<circle cx="1066" cy="102" r="1.2" fill="#CDDFE8" />
+<circle cx="1066" cy="130" r="1.2" fill="#CDDFE8" />
+<circle cx="1066" cy="158" r="1.2" fill="#CDDFE8" />
+<circle cx="1066" cy="186" r="1.2" fill="#CDDFE8" />
+<circle cx="1066" cy="214" r="1.2" fill="#CDDFE8" />
+<circle cx="1066" cy="242" r="1.2" fill="#CDDFE8" />
+<circle cx="1066" cy="270" r="1.2" fill="#CDDFE8" />
+<circle cx="1066" cy="298" r="1.2" fill="#CDDFE8" />
+<circle cx="1066" cy="326" r="1.2" fill="#CDDFE8" />
+<circle cx="1066" cy="354" r="1.2" fill="#CDDFE8" />
+<circle cx="1066" cy="382" r="1.2" fill="#CDDFE8" />
+<circle cx="1066" cy="410" r="1.2" fill="#CDDFE8" />
+<circle cx="1094" cy="74" r="1.2" fill="#CDDFE8" />
+<circle cx="1094" cy="102" r="1.2" fill="#CDDFE8" />
+<circle cx="1094" cy="130" r="1.2" fill="#CDDFE8" />
+<circle cx="1094" cy="158" r="1.2" fill="#CDDFE8" />
+<circle cx="1094" cy="186" r="1.2" fill="#CDDFE8" />
+<circle cx="1094" cy="214" r="1.2" fill="#CDDFE8" />
+<circle cx="1094" cy="242" r="1.2" fill="#CDDFE8" />
+<circle cx="1094" cy="270" r="1.2" fill="#CDDFE8" />
+<circle cx="1094" cy="298" r="1.2" fill="#CDDFE8" />
+<circle cx="1094" cy="326" r="1.2" fill="#CDDFE8" />
+<circle cx="1094" cy="354" r="1.2" fill="#CDDFE8" />
+<circle cx="1094" cy="382" r="1.2" fill="#CDDFE8" />
+<circle cx="1094" cy="410" r="1.2" fill="#CDDFE8" />
+<circle cx="1122" cy="74" r="1.2" fill="#CDDFE8" />
+<circle cx="1122" cy="102" r="1.2" fill="#CDDFE8" />
+<circle cx="1122" cy="130" r="1.2" fill="#CDDFE8" />
+<circle cx="1122" cy="158" r="1.2" fill="#CDDFE8" />
+<circle cx="1122" cy="186" r="1.2" fill="#CDDFE8" />
+<circle cx="1122" cy="214" r="1.2" fill="#CDDFE8" />
+<circle cx="1122" cy="242" r="1.2" fill="#CDDFE8" />
+<circle cx="1122" cy="270" r="1.2" fill="#CDDFE8" />
+<circle cx="1122" cy="298" r="1.2" fill="#CDDFE8" />
+<circle cx="1122" cy="326" r="1.2" fill="#CDDFE8" />
+<circle cx="1122" cy="354" r="1.2" fill="#CDDFE8" />
+<circle cx="1122" cy="382" r="1.2" fill="#CDDFE8" />
+<circle cx="1122" cy="410" r="1.2" fill="#CDDFE8" />
+<circle cx="1150" cy="74" r="1.2" fill="#CDDFE8" />
+<circle cx="1150" cy="102" r="1.2" fill="#CDDFE8" />
+<circle cx="1150" cy="130" r="1.2" fill="#CDDFE8" />
+<circle cx="1150" cy="158" r="1.2" fill="#CDDFE8" />
+<circle cx="1150" cy="186" r="1.2" fill="#CDDFE8" />
+<circle cx="1150" cy="214" r="1.2" fill="#CDDFE8" />
+<circle cx="1150" cy="242" r="1.2" fill="#CDDFE8" />
+<circle cx="1150" cy="270" r="1.2" fill="#CDDFE8" />
+<circle cx="1150" cy="298" r="1.2" fill="#CDDFE8" />
+<circle cx="1150" cy="326" r="1.2" fill="#CDDFE8" />
+<circle cx="1150" cy="354" r="1.2" fill="#CDDFE8" />
+<circle cx="1150" cy="382" r="1.2" fill="#CDDFE8" />
+<circle cx="1150" cy="410" r="1.2" fill="#CDDFE8" />
+<circle cx="1178" cy="74" r="1.2" fill="#CDDFE8" />
+<circle cx="1178" cy="102" r="1.2" fill="#CDDFE8" />
+<circle cx="1178" cy="130" r="1.2" fill="#CDDFE8" />
+<circle cx="1178" cy="158" r="1.2" fill="#CDDFE8" />
+<circle cx="1178" cy="186" r="1.2" fill="#CDDFE8" />
+<circle cx="1178" cy="214" r="1.2" fill="#CDDFE8" />
+<circle cx="1178" cy="242" r="1.2" fill="#CDDFE8" />
+<circle cx="1178" cy="270" r="1.2" fill="#CDDFE8" />
+<circle cx="1178" cy="298" r="1.2" fill="#CDDFE8" />
+<circle cx="1178" cy="326" r="1.2" fill="#CDDFE8" />
+<circle cx="1178" cy="354" r="1.2" fill="#CDDFE8" />
+<circle cx="1178" cy="382" r="1.2" fill="#CDDFE8" />
+<circle cx="1178" cy="410" r="1.2" fill="#CDDFE8" />
+<circle cx="1206" cy="74" r="1.2" fill="#CDDFE8" />
+<circle cx="1206" cy="102" r="1.2" fill="#CDDFE8" />
+<circle cx="1206" cy="130" r="1.2" fill="#CDDFE8" />
+<circle cx="1206" cy="158" r="1.2" fill="#CDDFE8" />
+<circle cx="1206" cy="186" r="1.2" fill="#CDDFE8" />
+<circle cx="1206" cy="214" r="1.2" fill="#CDDFE8" />
+<circle cx="1206" cy="242" r="1.2" fill="#CDDFE8" />
+<circle cx="1206" cy="270" r="1.2" fill="#CDDFE8" />
+<circle cx="1206" cy="298" r="1.2" fill="#CDDFE8" />
+<circle cx="1206" cy="326" r="1.2" fill="#CDDFE8" />
+<circle cx="1206" cy="354" r="1.2" fill="#CDDFE8" />
+<circle cx="1206" cy="382" r="1.2" fill="#CDDFE8" />
+<circle cx="1206" cy="410" r="1.2" fill="#CDDFE8" />
+<circle cx="1234" cy="74" r="1.2" fill="#CDDFE8" />
+<circle cx="1234" cy="102" r="1.2" fill="#CDDFE8" />
+<circle cx="1234" cy="130" r="1.2" fill="#CDDFE8" />
+<circle cx="1234" cy="158" r="1.2" fill="#CDDFE8" />
+<circle cx="1234" cy="186" r="1.2" fill="#CDDFE8" />
+<circle cx="1234" cy="214" r="1.2" fill="#CDDFE8" />
+<circle cx="1234" cy="242" r="1.2" fill="#CDDFE8" />
+<circle cx="1234" cy="270" r="1.2" fill="#CDDFE8" />
+<circle cx="1234" cy="298" r="1.2" fill="#CDDFE8" />
+<circle cx="1234" cy="326" r="1.2" fill="#CDDFE8" />
+<circle cx="1234" cy="354" r="1.2" fill="#CDDFE8" />
+<circle cx="1234" cy="382" r="1.2" fill="#CDDFE8" />
+<circle cx="1234" cy="410" r="1.2" fill="#CDDFE8" />
+<g font-family="Arial, Helvetica, sans-serif">
+ <g fill="none" stroke="#007F86" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M62 45L50 56L62 67M80 45L92 56L80 67M75 43L67 69" />
+ </g>
+ <text x="110" y="64" fill="#10283E" font-size="25" font-weight="700" letter-spacing="3">ADEVTC</text>
+ <text x="1208" y="62" fill="#4C6377" font-size="18" text-anchor="end" letter-spacing="2">MADRID, ES</text>
+ <path d="M50 91H1230" stroke="#CDDFE8" />
+ <text x="60" y="145" fill="#007F86" font-size="17" font-weight="700" letter-spacing="3.2">SAP INTEGRATION &amp; SOFTWARE DEVELOPMENT</text>
+ <text x="55" y="239" fill="#10283E" font-size="100" font-weight="700" letter-spacing="-4">Adrián</text>
+ <text x="55" y="329" fill="#10283E" font-size="88" font-weight="700" letter-spacing="-3.4">Tomás Cerdá<tspan fill="#007F86">.</tspan></text>
+ <text x="60" y="377" fill="#4C6377" font-size="25">Conecto sistemas. Construyo soluciones.</text>
+ <circle cx="66" cy="424" r="5" fill="#007F86" />
+ <text x="83" y="430" fill="#4C6377" font-size="16" letter-spacing="2">SAP BTP  /  INTEGRATION SUITE  /  FULL STACK</text>
+</g>
+<g fill="none" stroke="#CDDFE8" stroke-width="2">
+ <circle cx="1030" cy="265" r="139" />
+ <circle cx="1030" cy="265" r="108" stroke-dasharray="4 12" />
+ <path d="M831 190H885L932 237M1129 294L1175 340H1230M1047 126V171M920 337L877 380H817" />
+</g>
+<path d="M891 265A139 139 0 0 1 1030 126" fill="none" stroke="#007F86" stroke-width="3" />
+<path d="M1065 400A139 139 0 0 0 1166 294" fill="none" stroke="#007F86" stroke-width="3" opacity="0.4" />
+<g font-family="Arial, Helvetica, sans-serif">
+ <rect x="949" y="185" width="162" height="162" rx="35" fill="#E6F1F5" stroke="#007F86" stroke-width="1.5" />
+ <path d="M979 233L965 247L979 261M1081 233L1095 247L1081 261" fill="none" stroke="#007F86" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+ <text x="1030" y="272" text-anchor="middle" font-size="52" font-weight="700" fill="#10283E" letter-spacing="-3">AT</text>
+ <text x="1030" y="314" text-anchor="middle" font-size="11" font-weight="700" letter-spacing="3" fill="#4C6377">BUILD · CONNECT</text>
+ <rect x="801" y="170" width="96" height="39" rx="11" fill="#F4F8FB" stroke="#CDDFE8" />
+ <text x="849" y="196" text-anchor="middle" font-size="17" font-weight="700" fill="#10283E">SAP</text>
+ <rect x="1116" y="319" width="103" height="39" rx="11" fill="#F4F8FB" stroke="#CDDFE8" />
+ <text x="1167" y="345" text-anchor="middle" font-size="17" font-weight="700" fill="#10283E">WEB</text>
+ <circle cx="1047" cy="128" r="5" fill="#007F86" />
+ <circle cx="817" cy="380" r="5" fill="#007F86" />
+</g>
+
+</svg>

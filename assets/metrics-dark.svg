@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="330" viewBox="0 0 900 330" role="img" aria-labelledby="title desc">
+<title id="title">Código público de AdevTC</title>
+<desc id="desc">12 repositorios públicos. Distribución de bytes de código, excluidos forks y perfil: TypeScript: 72.71%; JavaScript: 15.29%; CSS: 9.16%; HTML: 2.57%; Java: 0.23%; Otros: 0.03%. Actualizado el 21 oct 2026. No mide experiencia profesional ni dominio de lenguajes.</desc>
+<rect x="1" y="1" width="898" height="328" rx="20" fill="#0B1220" stroke="#24374A"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="32" y="34" fill="#07E3E3" font-size="11" font-weight="700" letter-spacing="2.2">GITHUB · CÓDIGO PÚBLICO</text>
+<text x="32" y="72" fill="#F4F8FB" font-size="28" font-weight="700">Proyectos que puedes explorar.</text>
+<path d="M249 103V255" stroke="#24374A"/>
+<text x="32" y="183" fill="#07E3E3" font-size="76" font-weight="700">12</text>
+<text x="36" y="212" fill="#F4F8FB" font-size="16" font-weight="700">Repositorios públicos</text>
+<text x="36" y="237" fill="#9AAEC1" font-size="12">Incluye este perfil</text>
+<text x="282" y="113" fill="#F4F8FB" font-size="16" font-weight="700">Lenguajes del código público</text>
+<text x="282" y="134" fill="#9AAEC1" font-size="12">Distribución por bytes · 7 lenguajes detectados</text>
+<defs><clipPath id="bar"><rect x="282" y="151" width="580" height="12" rx="6"/></clipPath></defs>
+<rect x="282" y="151" width="580" height="12" rx="6" fill="#101D2E"/>
+<g clip-path="url(#bar)">
+<rect x="282.0000" y="151" width="421.7070" height="12" fill="#07E3E3"/>
+<rect x="703.7070" y="151" width="88.6973" height="12" fill="#648DFF"/>
+<rect x="792.4044" y="151" width="53.1180" height="12" fill="#C49BFF"/>
+<rect x="845.5224" y="151" width="14.9213" height="12" fill="#E5AF5F"/>
+<rect x="860.4436" y="151" width="1.3568" height="12" fill="#7AB8A8"/>
+<rect x="861.8004" y="151" width="0.1996" height="12" fill="#8494A4"/>
+</g>
+<circle cx="287" cy="189" r="4" fill="#07E3E3"/>
+<text x="300" y="193" fill="#F4F8FB" font-size="13">TypeScript</text>
+<text x="550" y="193" fill="#9AAEC1" font-size="13" text-anchor="end">72,7 %</text>
+<circle cx="589" cy="189" r="4" fill="#648DFF"/>
+<text x="602" y="193" fill="#F4F8FB" font-size="13">JavaScript</text>
+<text x="852" y="193" fill="#9AAEC1" font-size="13" text-anchor="end">15,3 %</text>
+<circle cx="287" cy="219" r="4" fill="#C49BFF"/>
+<text x="300" y="223" fill="#F4F8FB" font-size="13">CSS</text>
+<text x="550" y="223" fill="#9AAEC1" font-size="13" text-anchor="end">9,2 %</text>
+<circle cx="589" cy="219" r="4" fill="#E5AF5F"/>
+<text x="602" y="223" fill="#F4F8FB" font-size="13">HTML</text>
+<text x="852" y="223" fill="#9AAEC1" font-size="13" text-anchor="end">2,6 %</text>
+<circle cx="287" cy="249" r="4" fill="#7AB8A8"/>
+<text x="300" y="253" fill="#F4F8FB" font-size="13">Java</text>
+<text x="550" y="253" fill="#9AAEC1" font-size="13" text-anchor="end">0,2 %</text>
+<circle cx="589" cy="249" r="4" fill="#8494A4"/>
+<text x="602" y="253" fill="#F4F8FB" font-size="13">Otros</text>
+<text x="852" y="253" fill="#9AAEC1" font-size="13" text-anchor="end">&lt;0,1 %</text>
+<path d="M32 279H868" stroke="#24374A"/>
+<text x="32" y="304" fill="#9AAEC1" font-size="11">Sin forks ni perfil en los lenguajes. No mide nivel de dominio.</text>
+<text x="868" y="304" fill="#9AAEC1" font-size="11" text-anchor="end">Actualizado: 21 oct 2026</text>
+</g></svg>

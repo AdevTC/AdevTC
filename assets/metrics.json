@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "username": "AdevTC",
+  "updated_at_utc": "2026-10-21T12:45:54+00:00",
+  "public_repositories": 12,
+  "repository_count_scope": "Todos los repositorios públicos propios; incluye el repositorio de perfil y los forks públicos.",
+  "language_scope": {
+    "description": "Bytes de código en repositorios públicos propios, sin forks ni repositorio de perfil. Incluye repositorios archivados.",
+    "repositories_queried": 11,
+    "repositories_with_detected_code": 8,
+    "excluded_forks": 0,
+    "excluded_profile_name": "AdevTC"
+  },
+  "total_public_code_bytes": 13612022,
+  "languages": [
+    {
+      "name": "TypeScript",
+      "bytes": 9897044,
+      "percent": 72.708111
+    },
+    {
+      "name": "JavaScript",
+      "bytes": 2081638,
+      "percent": 15.292644
+    },
+    {
+      "name": "CSS",
+      "bytes": 1246626,
+      "percent": 9.158272
+    },
+    {
+      "name": "HTML",
+      "bytes": 350187,
+      "percent": 2.57263
+    },
+    {
+      "name": "Java",
+      "bytes": 31843,
+      "percent": 0.233933
+    },
+    {
+      "name": "PowerShell",
+      "bytes": 3327,
+      "percent": 0.024442
+    },
+    {
+      "name": "Shell",
+      "bytes": 1357,
+      "percent": 0.009969
+    }
+  ],
+  "sources": [
+    "https://api.github.com/users/AdevTC",
+    "https://api.github.com/users/AdevTC/repos?type=owner&per_page=100",
+    "https://docs.github.com/en/rest/repos/repos#list-repository-languages"
+  ]
+}

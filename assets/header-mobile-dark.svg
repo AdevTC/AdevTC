@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="470" viewBox="0 0 640 470" role="img" aria-labelledby="title">
+<title id="title">Adrián Tomás Cerdá. Conecto sistemas. Construyo soluciones.</title>
+
+<rect x="1" y="1" width="638" height="468" rx="24" fill="#0B1220" stroke="#22354B" stroke-width="2" />
+<path d="M444 1H616Q639 1 639 24V446Q639 469 616 469H576Z" fill="#111E30" />
+<g font-family="Arial, Helvetica, sans-serif">
+ <path d="M43 37L32 47L43 57M61 37L72 47L61 57M56 35L48 59" fill="none" stroke="#07E3E3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+ <text x="90" y="55" fill="#F7FAFC" font-size="25" font-weight="700" letter-spacing="2">ADEVTC</text>
+ <text x="606" y="53" fill="#9AABBF" font-size="16" text-anchor="end" letter-spacing="1">MADRID, ES</text>
+ <path d="M32 83H608" stroke="#22354B" />
+ <text x="34" y="131" fill="#07E3E3" font-size="20" font-weight="700" letter-spacing="2">SAP BTP / FULL STACK</text>
+ <text x="30" y="226" fill="#F7FAFC" font-size="97" font-weight="700" letter-spacing="-4">Adrián</text>
+ <text x="30" y="306" fill="#F7FAFC" font-size="74" font-weight="700" letter-spacing="-3">Tomás Cerdá<tspan fill="#07E3E3">.</tspan></text>
+ <text x="35" y="365" fill="#9AABBF" font-size="28">Conecto sistemas.</text>
+ <text x="35" y="404" fill="#9AABBF" font-size="28">Construyo soluciones.</text>
+ <path d="M36 437H116" stroke="#07E3E3" stroke-width="3" stroke-linecap="round" />
+ <circle cx="134" cy="437" r="4" fill="#07E3E3" />
+</g>
+</svg>
