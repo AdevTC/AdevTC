@@ -1,0 +1,46 @@
+name: Actualizar métricas del perfil
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - scripts/update_metrics.py
+      - .github/workflows/update-metrics.yml
+  schedule:
+    - cron: '17 6 * * 1' # Lunes 06:17 UTC; 07:17/08:17 en Madrid.
+
+permissions: {}
+
+concurrency:
+  group: profile-metrics
+  cancel-in-progress: false
+
+jobs:
+  update:
+    # Evita ejecuciones en forks y actualizaciones desde ramas de prueba.
+    if: github.repository == 'AdevTC/AdevTC' && github.ref_name == github.event.repository.default_branch
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - name: Obtener el repositorio
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+
+      - name: Generar tarjetas desde datos públicos
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 scripts/update_metrics.py --username AdevTC
+
+      - name: Guardar únicamente las tarjetas actualizadas
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- assets/metrics-dark.svg assets/metrics-light.svg assets/metrics-mobile-dark.svg assets/metrics-mobile-light.svg assets/metrics.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'chore: actualizar métricas públicas del perfil'
+            git push
+          fi
