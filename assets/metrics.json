@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "username": "AdevTC",
-  "updated_at_utc": "2026-10-26T13:05:42+00:00",
+  "updated_at_utc": "2026-11-02T15:56:46+00:00",
   "public_repositories": 12,
   "repository_count_scope": "Todos los repositorios públicos propios; incluye el repositorio de perfil y los forks públicos.",
   "language_scope": {
@@ -11,42 +11,42 @@
     "excluded_forks": 0,
     "excluded_profile_name": "AdevTC"
   },
-  "total_public_code_bytes": 15670343,
+  "total_public_code_bytes": 17516571,
   "languages": [
     {
       "name": "TypeScript",
-      "bytes": 11612165,
-      "percent": 74.102813
+      "bytes": 13247623,
+      "percent": 75.629089
     },
     {
       "name": "JavaScript",
-      "bytes": 2116416,
-      "percent": 13.505869
+      "bytes": 2127333,
+      "percent": 12.144689
     },
     {
       "name": "CSS",
-      "bytes": 1555048,
-      "percent": 9.92351
+      "bytes": 1753718,
+      "percent": 10.011765
     },
     {
       "name": "HTML",
       "bytes": 350187,
-      "percent": 2.234712
+      "percent": 1.999176
     },
     {
       "name": "Java",
       "bytes": 31843,
-      "percent": 0.203206
+      "percent": 0.181788
     },
     {
       "name": "PowerShell",
       "bytes": 3327,
-      "percent": 0.021231
+      "percent": 0.018993
     },
     {
       "name": "Shell",
-      "bytes": 1357,
-      "percent": 0.00866
+      "bytes": 2540,
+      "percent": 0.014501
     }
   ],
   "sources": [
