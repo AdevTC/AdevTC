@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="480" height="440" viewBox="0 0 480 440" role="img" aria-labelledby="title desc">
 <title id="title">Código público de AdevTC</title>
-<desc id="desc">12 repositorios públicos. Distribución de bytes de código, excluidos forks y perfil: TypeScript: 75.63%; JavaScript: 12.14%; CSS: 10.01%; HTML: 2.00%; Java: 0.18%; Otros: 0.03%. Actualizado el 02 nov 2026. No mide experiencia profesional ni dominio de lenguajes.</desc>
+<desc id="desc">12 repositorios públicos. Distribución de bytes de código, excluidos forks y perfil: TypeScript: 75.80%; JavaScript: 12.19%; CSS: 9.84%; HTML: 1.96%; Java: 0.18%; Otros: 0.03%. Actualizado el 09 nov 2026. No mide experiencia profesional ni dominio de lenguajes.</desc>
 <rect x="1" y="1" width="478" height="438" rx="20" fill="#F4F8FB" stroke="#D8E5ED"/>
 <g font-family="Arial, Helvetica, sans-serif">
 <text x="28" y="37" fill="#007F86" font-size="16" font-weight="700" letter-spacing="1.5">GITHUB · CÓDIGO PÚBLICO</text>
@@ -13,22 +13,22 @@
 <defs><clipPath id="bar"><rect x="28" y="235" width="424" height="14" rx="7"/></clipPath></defs>
 <rect x="28" y="235" width="424" height="14" rx="7" fill="#FFFFFF"/>
 <g clip-path="url(#bar)">
-<rect x="28.0000" y="235" width="320.6673" height="14" fill="#007F86"/>
-<rect x="348.6673" y="235" width="51.4935" height="14" fill="#648DFF"/>
-<rect x="400.1608" y="235" width="42.4499" height="14" fill="#C49BFF"/>
-<rect x="442.6107" y="235" width="8.4765" height="14" fill="#E5AF5F"/>
-<rect x="451.0872" y="235" width="0.7708" height="14" fill="#7AB8A8"/>
-<rect x="451.8580" y="235" width="0.1420" height="14" fill="#8494A4"/>
+<rect x="28.0000" y="235" width="321.3920" height="14" fill="#007F86"/>
+<rect x="349.3920" y="235" width="51.6954" height="14" fill="#648DFF"/>
+<rect x="401.0874" y="235" width="41.7150" height="14" fill="#C49BFF"/>
+<rect x="442.8024" y="235" width="8.3034" height="14" fill="#E5AF5F"/>
+<rect x="451.1058" y="235" width="0.7551" height="14" fill="#7AB8A8"/>
+<rect x="451.8609" y="235" width="0.1391" height="14" fill="#8494A4"/>
 </g>
 <circle cx="33" cy="279" r="4" fill="#007F86"/>
 <text x="45" y="285" fill="#0B1220" font-size="17">TypeScript</text>
-<text x="230" y="285" fill="#536A7E" font-size="17" text-anchor="end">75,6 %</text>
+<text x="230" y="285" fill="#536A7E" font-size="17" text-anchor="end">75,8 %</text>
 <circle cx="255" cy="279" r="4" fill="#648DFF"/>
 <text x="267" y="285" fill="#0B1220" font-size="17">JavaScript</text>
-<text x="452" y="285" fill="#536A7E" font-size="17" text-anchor="end">12,1 %</text>
+<text x="452" y="285" fill="#536A7E" font-size="17" text-anchor="end">12,2 %</text>
 <circle cx="33" cy="315" r="4" fill="#C49BFF"/>
 <text x="45" y="321" fill="#0B1220" font-size="17">CSS</text>
-<text x="230" y="321" fill="#536A7E" font-size="17" text-anchor="end">10,0 %</text>
+<text x="230" y="321" fill="#536A7E" font-size="17" text-anchor="end">9,8 %</text>
 <circle cx="255" cy="315" r="4" fill="#E5AF5F"/>
 <text x="267" y="321" fill="#0B1220" font-size="17">HTML</text>
 <text x="452" y="321" fill="#536A7E" font-size="17" text-anchor="end">2,0 %</text>
@@ -40,5 +40,5 @@
 <text x="452" y="357" fill="#536A7E" font-size="17" text-anchor="end">&lt;0,1 %</text>
 <path d="M28 381H452" stroke="#D8E5ED"/>
 <text x="28" y="405" fill="#536A7E" font-size="14">Sin forks ni perfil. No mide dominio.</text>
-<text x="28" y="426" fill="#536A7E" font-size="14">Actualizado: 02 nov 2026</text>
+<text x="28" y="426" fill="#536A7E" font-size="14">Actualizado: 09 nov 2026</text>
 </g></svg>
