@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="480" height="440" viewBox="0 0 480 440" role="img" aria-labelledby="title desc">
 <title id="title">Código público de AdevTC</title>
-<desc id="desc">12 repositorios públicos. Distribución de bytes de código, excluidos forks y perfil: TypeScript: 75.80%; JavaScript: 12.19%; CSS: 9.84%; HTML: 1.96%; Java: 0.18%; Otros: 0.03%. Actualizado el 09 nov 2026. No mide experiencia profesional ni dominio de lenguajes.</desc>
+<desc id="desc">12 repositorios públicos. Distribución de bytes de código, excluidos forks y perfil: TypeScript: 75.80%; JavaScript: 12.19%; CSS: 9.84%; HTML: 1.96%; Java: 0.18%; Otros: 0.03%. Actualizado el 16 nov 2026. No mide experiencia profesional ni dominio de lenguajes.</desc>
 <rect x="1" y="1" width="478" height="438" rx="20" fill="#F4F8FB" stroke="#D8E5ED"/>
 <g font-family="Arial, Helvetica, sans-serif">
 <text x="28" y="37" fill="#007F86" font-size="16" font-weight="700" letter-spacing="1.5">GITHUB · CÓDIGO PÚBLICO</text>
@@ -40,5 +40,5 @@
 <text x="452" y="357" fill="#536A7E" font-size="17" text-anchor="end">&lt;0,1 %</text>
 <path d="M28 381H452" stroke="#D8E5ED"/>
 <text x="28" y="405" fill="#536A7E" font-size="14">Sin forks ni perfil. No mide dominio.</text>
-<text x="28" y="426" fill="#536A7E" font-size="14">Actualizado: 09 nov 2026</text>
+<text x="28" y="426" fill="#536A7E" font-size="14">Actualizado: 16 nov 2026</text>
 </g></svg>
