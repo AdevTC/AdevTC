@@ -1,52 +1,52 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
 <title id="title">Lenguajes del código público · AdevTC</title>
-<desc id="desc">Distribución de 17881139 bytes de código público de AdevTC. TypeScript: 75.8000 %; JavaScript: 12.1923 %; CSS: 9.8384 %; HTML: 1.9583 %; Java: 0.1781 %; PowerShell: 0.0186 %; Shell: 0.0142 %. Se excluyen forks y repositorio de perfil; se incluyen archivados. Los porcentajes describen código, no dominio de tecnologías. Fecha de consulta: 23 nov 2026.</desc>
+<desc id="desc">Distribución de 19211666 bytes de código público de AdevTC. TypeScript: 77.3426 %; JavaScript: 11.3509 %; CSS: 9.1912 %; HTML: 1.8227 %; Java: 0.1657 %; PLpgSQL: 0.0786 %; Shell: 0.0233 %; PowerShell: 0.0173 %; Dockerfile: 0.0077 %. Se excluyen forks y repositorio de perfil; se incluyen archivados. Los porcentajes describen código, no dominio de tecnologías. Fecha de consulta: 27 nov 2026.</desc>
 <rect x="1" y="1" width="1198" height="298" rx="24" fill="#f3f7fc" stroke="#d5dfeb"/>
 <g font-family="Arial, Helvetica, sans-serif">
 <text x="32" y="33" fill="#007d94" font-size="12" font-weight="700" letter-spacing="1.8">LENGUAJES / POR BYTES</text>
 <text x="32" y="68" fill="#10243b" font-size="29" font-weight="700">El código, por dentro.</text>
-<text x="1168" y="33" text-anchor="end" fill="#52677f" font-size="13">TOP 6 / 7</text>
+<text x="1168" y="33" text-anchor="end" fill="#52677f" font-size="13">TOP 6 / 9</text>
 <circle cx="150" cy="172" r="76" fill="none" stroke="#d5dfeb" stroke-width="19"/>
-<circle cx="150" cy="172" r="76" fill="none" stroke="#007d94" stroke-width="19" stroke-dasharray="361.961783 115.560300" stroke-dashoffset="-0.000000" transform="rotate(-90 150 172)"/>
-<circle cx="150" cy="172" r="76" fill="none" stroke="#567700" stroke-width="19" stroke-dasharray="58.220975 419.301108" stroke-dashoffset="-361.961783" transform="rotate(-90 150 172)"/>
-<circle cx="150" cy="172" r="76" fill="none" stroke="#7251b3" stroke-width="19" stroke-dasharray="46.980747 430.541337" stroke-dashoffset="-420.182758" transform="rotate(-90 150 172)"/>
-<circle cx="150" cy="172" r="76" fill="none" stroke="#316dd3" stroke-width="19" stroke-dasharray="9.351519 468.170564" stroke-dashoffset="-467.163505" transform="rotate(-90 150 172)"/>
-<circle cx="150" cy="172" r="76" fill="none" stroke="#b54e79" stroke-width="19" stroke-dasharray="0.850378 476.671705" stroke-dashoffset="-476.515025" transform="rotate(-90 150 172)"/>
-<circle cx="150" cy="172" r="76" fill="none" stroke="#986510" stroke-width="19" stroke-dasharray="0.088849 477.433235" stroke-dashoffset="-477.365403" transform="rotate(-90 150 172)"/>
-<circle cx="150" cy="172" r="76" fill="none" stroke="#8c9bb0" stroke-width="19" stroke-dasharray="0.067832 477.454252" stroke-dashoffset="-477.454252" transform="rotate(-90 150 172)"/>
+<circle cx="150" cy="172" r="76" fill="none" stroke="#007d94" stroke-width="19" stroke-dasharray="369.327970 108.194113" stroke-dashoffset="-0.000000" transform="rotate(-90 150 172)"/>
+<circle cx="150" cy="172" r="76" fill="none" stroke="#567700" stroke-width="19" stroke-dasharray="54.202930 423.319153" stroke-dashoffset="-369.327970" transform="rotate(-90 150 172)"/>
+<circle cx="150" cy="172" r="76" fill="none" stroke="#7251b3" stroke-width="19" stroke-dasharray="43.889869 433.632214" stroke-dashoffset="-423.530900" transform="rotate(-90 150 172)"/>
+<circle cx="150" cy="172" r="76" fill="none" stroke="#316dd3" stroke-width="19" stroke-dasharray="8.703869 468.818215" stroke-dashoffset="-467.420770" transform="rotate(-90 150 172)"/>
+<circle cx="150" cy="172" r="76" fill="none" stroke="#b54e79" stroke-width="19" stroke-dasharray="0.791484 476.730599" stroke-dashoffset="-476.124638" transform="rotate(-90 150 172)"/>
+<circle cx="150" cy="172" r="76" fill="none" stroke="#986510" stroke-width="19" stroke-dasharray="0.375298 477.146785" stroke-dashoffset="-476.916123" transform="rotate(-90 150 172)"/>
+<circle cx="150" cy="172" r="76" fill="none" stroke="#8c9bb0" stroke-width="19" stroke-dasharray="0.230662 477.291421" stroke-dashoffset="-477.291421" transform="rotate(-90 150 172)"/>
 <text x="150" y="163" text-anchor="middle" fill="#52677f" font-size="12" letter-spacing="1.5">CÓDIGO</text>
-<text x="150" y="195" text-anchor="middle" fill="#10243b" font-size="25" font-weight="700">17,9 MB</text>
+<text x="150" y="195" text-anchor="middle" fill="#10243b" font-size="25" font-weight="700">19,2 MB</text>
 <circle cx="298" cy="109" r="4.5" fill="#007d94"/>
 <text x="312" y="115" fill="#10243b" font-size="18" font-weight="700">TypeScript</text>
-<text x="709" y="115" text-anchor="end" fill="#52677f" font-size="17">75,8 %</text>
+<text x="709" y="115" text-anchor="end" fill="#52677f" font-size="17">77,3 %</text>
 <rect x="293" y="126" width="416" height="5" rx="2.5" fill="#d5dfeb"/>
-<rect x="293" y="126" width="315.3280" height="5" rx="2.5" fill="#007d94"/>
+<rect x="293" y="126" width="321.7452" height="5" rx="2.5" fill="#007d94"/>
 <circle cx="747" cy="109" r="4.5" fill="#567700"/>
 <text x="761" y="115" fill="#10243b" font-size="18" font-weight="700">JavaScript</text>
-<text x="1158" y="115" text-anchor="end" fill="#52677f" font-size="17">12,2 %</text>
+<text x="1158" y="115" text-anchor="end" fill="#52677f" font-size="17">11,4 %</text>
 <rect x="742" y="126" width="416" height="5" rx="2.5" fill="#d5dfeb"/>
-<rect x="742" y="126" width="50.7200" height="5" rx="2.5" fill="#567700"/>
+<rect x="742" y="126" width="47.2196" height="5" rx="2.5" fill="#567700"/>
 <circle cx="298" cy="168" r="4.5" fill="#7251b3"/>
 <text x="312" y="174" fill="#10243b" font-size="18" font-weight="700">CSS</text>
-<text x="709" y="174" text-anchor="end" fill="#52677f" font-size="17">9,8 %</text>
+<text x="709" y="174" text-anchor="end" fill="#52677f" font-size="17">9,2 %</text>
 <rect x="293" y="185" width="416" height="5" rx="2.5" fill="#d5dfeb"/>
-<rect x="293" y="185" width="40.9279" height="5" rx="2.5" fill="#7251b3"/>
+<rect x="293" y="185" width="38.2353" height="5" rx="2.5" fill="#7251b3"/>
 <circle cx="747" cy="168" r="4.5" fill="#316dd3"/>
 <text x="761" y="174" fill="#10243b" font-size="18" font-weight="700">HTML</text>
-<text x="1158" y="174" text-anchor="end" fill="#52677f" font-size="17">2,0 %</text>
+<text x="1158" y="174" text-anchor="end" fill="#52677f" font-size="17">1,8 %</text>
 <rect x="742" y="185" width="416" height="5" rx="2.5" fill="#d5dfeb"/>
-<rect x="742" y="185" width="8.1467" height="5" rx="2.5" fill="#316dd3"/>
+<rect x="742" y="185" width="7.5825" height="5" rx="2.5" fill="#316dd3"/>
 <circle cx="298" cy="227" r="4.5" fill="#b54e79"/>
 <text x="312" y="233" fill="#10243b" font-size="18" font-weight="700">Java</text>
 <text x="709" y="233" text-anchor="end" fill="#52677f" font-size="17">0,2 %</text>
 <rect x="293" y="244" width="416" height="5" rx="2.5" fill="#d5dfeb"/>
-<rect x="293" y="244" width="0.7408" height="5" rx="2.5" fill="#b54e79"/>
+<rect x="293" y="244" width="0.7000" height="5" rx="2.5" fill="#b54e79"/>
 <circle cx="747" cy="227" r="4.5" fill="#986510"/>
-<text x="761" y="233" fill="#10243b" font-size="18" font-weight="700">PowerShell</text>
+<text x="761" y="233" fill="#10243b" font-size="18" font-weight="700">PLpgSQL</text>
 <text x="1158" y="233" text-anchor="end" fill="#52677f" font-size="17">&lt;0,1 %</text>
 <rect x="742" y="244" width="416" height="5" rx="2.5" fill="#d5dfeb"/>
 <rect x="742" y="244" width="0.7000" height="5" rx="2.5" fill="#986510"/>
 <path d="M32 263H1168" stroke="#d5dfeb"/>
 <text x="32" y="286" fill="#52677f" font-size="12">Sin forks ni perfil · Incluye archivados · Por bytes, no por dominio · Otros: &lt;0,1 %</text>
-<text x="1168" y="286" text-anchor="end" fill="#52677f" font-size="12">23 nov 2026</text>
+<text x="1168" y="286" text-anchor="end" fill="#52677f" font-size="12">27 nov 2026</text>
 </g></svg>

@@ -1,52 +1,78 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "username": "AdevTC",
-  "updated_at_utc": "2026-11-23T18:11:38+00:00",
-  "public_repositories": 12,
+  "updated_at_utc": "2026-11-27T11:16:24+00:00",
+  "public_repositories": 13,
+  "nonfork_public_repositories": 13,
+  "stars_received": 2,
+  "forks_received": 0,
+  "followers": 7,
+  "following": 6,
+  "engagement_scope": {
+    "description": "Stars y forks recibidos en todos los repositorios públicos propios no fork, incluido el perfil.",
+    "repositories_counted": 13,
+    "excluded_forks": 0
+  },
+  "data_availability": {
+    "stars_received": true,
+    "forks_received": true,
+    "followers": true,
+    "following": true
+  },
   "repository_count_scope": "Todos los repositorios públicos propios; incluye el repositorio de perfil y los forks públicos.",
   "language_scope": {
     "description": "Bytes de código en repositorios públicos propios, sin forks ni repositorio de perfil. Incluye repositorios archivados.",
-    "repositories_queried": 11,
-    "repositories_with_detected_code": 8,
+    "repositories_queried": 12,
+    "repositories_with_detected_code": 9,
     "excluded_forks": 0,
     "excluded_profile_name": "AdevTC"
   },
-  "total_public_code_bytes": 17881139,
+  "total_public_code_bytes": 19211666,
   "languages": [
     {
       "name": "TypeScript",
-      "bytes": 13553905,
-      "percent": 75.800009
+      "bytes": 14858801,
+      "percent": 77.342595
     },
     {
       "name": "JavaScript",
-      "bytes": 2180124,
-      "percent": 12.192311
+      "bytes": 2180692,
+      "percent": 11.350874
     },
     {
       "name": "CSS",
-      "bytes": 1759226,
-      "percent": 9.838445
+      "bytes": 1765777,
+      "percent": 9.191171
     },
     {
       "name": "HTML",
       "bytes": 350174,
-      "percent": 1.958343
+      "percent": 1.822715
     },
     {
       "name": "Java",
       "bytes": 31843,
-      "percent": 0.178081
+      "percent": 0.165748
+    },
+    {
+      "name": "PLpgSQL",
+      "bytes": 15099,
+      "percent": 0.078593
+    },
+    {
+      "name": "Shell",
+      "bytes": 4479,
+      "percent": 0.023314
     },
     {
       "name": "PowerShell",
       "bytes": 3327,
-      "percent": 0.018606
+      "percent": 0.017318
     },
     {
-      "name": "Shell",
-      "bytes": 2540,
-      "percent": 0.014205
+      "name": "Dockerfile",
+      "bytes": 1474,
+      "percent": 0.007672
     }
   ],
   "sources": [

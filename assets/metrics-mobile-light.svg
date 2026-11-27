@@ -1,45 +1,45 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="620" viewBox="0 0 640 620" role="img" aria-labelledby="title desc">
 <title id="title">GitHub en números · AdevTC</title>
-<desc id="desc">Estadísticas públicas de AdevTC. Repositorios: 12; Stars recibidas: no disponible; Forks recibidos: no disponible; Seguidores: no disponible; Repos con código: 8; Lenguajes: 7. Siguiendo: no disponible. Repositorios incluye forks y perfil. Stars y forks recibidos solo en repositorios propios no fork, incluido el perfil. Código y lenguajes excluyen forks y perfil. N/D significa que el dato no estaba disponible. Datos consultados el 23 nov 2026.</desc>
+<desc id="desc">Estadísticas públicas de AdevTC. Repositorios: 13; Stars recibidas: 2; Forks recibidos: 0; Seguidores: 7; Repos con código: 9; Lenguajes: 9. Siguiendo: 6. Repositorios incluye forks y perfil. Stars y forks recibidos solo en repositorios propios no fork, incluido el perfil. Código y lenguajes excluyen forks y perfil. N/D significa que el dato no estaba disponible. Datos consultados el 27 nov 2026.</desc>
 <rect x="1" y="1" width="638" height="618" rx="24" fill="#f3f7fc" stroke="#d5dfeb"/>
 <g font-family="Arial, Helvetica, sans-serif">
 <text x="28" y="33" fill="#007d94" font-size="14" font-weight="700" letter-spacing="2">AdevTC / GITHUB</text>
 <text x="28" y="68" fill="#10243b" font-size="32" font-weight="700">GitHub en números.</text>
-<text x="612" y="33" text-anchor="end" fill="#52677f" font-size="13">23 nov 2026</text>
+<text x="612" y="33" text-anchor="end" fill="#52677f" font-size="13">27 nov 2026</text>
 <rect x="28" y="99" width="284" height="134" rx="16" fill="#ffffff" stroke="#d5dfeb"/>
 <path d="M46 100H83" stroke="#007d94" stroke-width="2" stroke-linecap="round"/>
 <g transform="translate(267 119) scale(1.04167)" fill="none" stroke="#007d94" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h14v17H7a2 2 0 0 1-2-2V3Zm0 13h14M9 7h6M9 10h4"/></g>
-<text x="48" y="160" fill="#007d94" font-size="49" font-weight="700">12</text>
+<text x="48" y="160" fill="#007d94" font-size="49" font-weight="700">13</text>
 <text x="48" y="193" fill="#10243b" font-size="19" font-weight="700">Repositorios</text>
 <text x="48" y="217" fill="#52677f" font-size="14">públicos</text>
 <rect x="328" y="99" width="284" height="134" rx="16" fill="#ffffff" stroke="#d5dfeb"/>
 <path d="M346 100H383" stroke="#567700" stroke-width="2" stroke-linecap="round"/>
 <g transform="translate(567 119) scale(1.04167)" fill="none" stroke="#567700" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 2.8 5.7 6.3.9-4.5 4.4 1.1 6.3-5.7-3-5.7 3 1.1-6.3L3 9.6l6.3-.9Z"/></g>
-<text x="348" y="160" fill="#567700" font-size="49" font-weight="700">N/D</text>
+<text x="348" y="160" fill="#567700" font-size="49" font-weight="700">2</text>
 <text x="348" y="193" fill="#10243b" font-size="19" font-weight="700">Stars recibidas</text>
 <text x="348" y="217" fill="#52677f" font-size="14">repos propios · sin forks</text>
 <rect x="28" y="249" width="284" height="134" rx="16" fill="#ffffff" stroke="#d5dfeb"/>
 <path d="M46 250H83" stroke="#7251b3" stroke-width="2" stroke-linecap="round"/>
 <g transform="translate(267 269) scale(1.04167)" fill="none" stroke="#7251b3" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="4" r="2"/><circle cx="18" cy="4" r="2"/><circle cx="12" cy="20" r="2"/><path d="M6 6v3a6 6 0 0 0 6 6m6-9v3a6 6 0 0 1-6 6v3"/></g>
-<text x="48" y="310" fill="#7251b3" font-size="49" font-weight="700">N/D</text>
+<text x="48" y="310" fill="#7251b3" font-size="49" font-weight="700">0</text>
 <text x="48" y="343" fill="#10243b" font-size="19" font-weight="700">Forks recibidos</text>
 <text x="48" y="367" fill="#52677f" font-size="14">repos propios · sin forks</text>
 <rect x="328" y="249" width="284" height="134" rx="16" fill="#ffffff" stroke="#d5dfeb"/>
 <path d="M346 250H383" stroke="#007d94" stroke-width="2" stroke-linecap="round"/>
 <g transform="translate(567 269) scale(1.04167)" fill="none" stroke="#007d94" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M3 21v-3a6 6 0 0 1 12 0v3m1-16a3 3 0 0 1 0 6m2 3a5 5 0 0 1 3 4v3"/></g>
-<text x="348" y="310" fill="#007d94" font-size="49" font-weight="700">N/D</text>
+<text x="348" y="310" fill="#007d94" font-size="49" font-weight="700">7</text>
 <text x="348" y="343" fill="#10243b" font-size="19" font-weight="700">Seguidores</text>
-<text x="348" y="367" fill="#52677f" font-size="14">Siguiendo a N/D</text>
+<text x="348" y="367" fill="#52677f" font-size="14">Siguiendo a 6</text>
 <rect x="28" y="399" width="284" height="134" rx="16" fill="#ffffff" stroke="#d5dfeb"/>
 <path d="M46 400H83" stroke="#567700" stroke-width="2" stroke-linecap="round"/>
 <g transform="translate(267 419) scale(1.04167)" fill="none" stroke="#567700" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m7 6-5 6 5 6m10-12 5 6-5 6m-3-15-4 18"/></g>
-<text x="48" y="460" fill="#567700" font-size="49" font-weight="700">8</text>
+<text x="48" y="460" fill="#567700" font-size="49" font-weight="700">9</text>
 <text x="48" y="493" fill="#10243b" font-size="19" font-weight="700">Repos con código</text>
 <text x="48" y="517" fill="#52677f" font-size="14">sin forks ni perfil</text>
 <rect x="328" y="399" width="284" height="134" rx="16" fill="#ffffff" stroke="#d5dfeb"/>
 <path d="M346 400H383" stroke="#7251b3" stroke-width="2" stroke-linecap="round"/>
 <g transform="translate(567 419) scale(1.04167)" fill="none" stroke="#7251b3" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5h14M8 2v6m9-3c-1 6-5 10-12 12m2-8c2 4 5 6 9 7m-1 5 3-8 3 8m-5-3h4"/></g>
-<text x="348" y="460" fill="#7251b3" font-size="49" font-weight="700">7</text>
+<text x="348" y="460" fill="#7251b3" font-size="49" font-weight="700">9</text>
 <text x="348" y="493" fill="#10243b" font-size="19" font-weight="700">Lenguajes</text>
 <text x="348" y="517" fill="#52677f" font-size="14">detectados por GitHub</text>
 <path d="M28 557H612" stroke="#d5dfeb"/>

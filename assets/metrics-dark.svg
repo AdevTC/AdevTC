@@ -1,46 +1,46 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="330" viewBox="0 0 1200 330" role="img" aria-labelledby="title desc">
 <title id="title">GitHub en números · AdevTC</title>
-<desc id="desc">Estadísticas públicas de AdevTC. Repositorios: 12; Stars recibidas: no disponible; Forks recibidos: no disponible; Seguidores: no disponible; Repos con código: 8; Lenguajes: 7. Siguiendo: no disponible. Repositorios incluye forks y perfil. Stars y forks recibidos solo en repositorios propios no fork, incluido el perfil. Código y lenguajes excluyen forks y perfil. N/D significa que el dato no estaba disponible. Datos consultados el 23 nov 2026.</desc>
+<desc id="desc">Estadísticas públicas de AdevTC. Repositorios: 13; Stars recibidas: 2; Forks recibidos: 0; Seguidores: 7; Repos con código: 9; Lenguajes: 9. Siguiendo: 6. Repositorios incluye forks y perfil. Stars y forks recibidos solo en repositorios propios no fork, incluido el perfil. Código y lenguajes excluyen forks y perfil. N/D significa que el dato no estaba disponible. Datos consultados el 27 nov 2026.</desc>
 <rect x="1" y="1" width="1198" height="328" rx="24" fill="#07101f" stroke="#203047"/>
 <g font-family="Arial, Helvetica, sans-serif">
 <text x="32" y="33" fill="#55d9ed" font-size="12" font-weight="700" letter-spacing="2">AdevTC / GITHUB</text>
 <text x="32" y="68" fill="#edf5fc" font-size="29" font-weight="700">GitHub en números.</text>
 <text x="1168" y="37" text-anchor="end" fill="#9cacc1" font-size="12">DATOS PÚBLICOS</text>
-<text x="1168" y="61" text-anchor="end" fill="#edf5fc" font-size="14">23 nov 2026</text>
+<text x="1168" y="61" text-anchor="end" fill="#edf5fc" font-size="14">27 nov 2026</text>
 <rect x="32" y="92" width="368" height="94" rx="16" fill="#0d1b2d" stroke="#203047"/>
 <path d="M50 93H87" stroke="#55d9ed" stroke-width="2" stroke-linecap="round"/>
 <g transform="translate(364 107) scale(0.79167)" fill="none" stroke="#55d9ed" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h14v17H7a2 2 0 0 1-2-2V3Zm0 13h14M9 7h6M9 10h4"/></g>
-<text x="52" y="156" fill="#55d9ed" font-size="45" font-weight="700">12</text>
+<text x="52" y="156" fill="#55d9ed" font-size="45" font-weight="700">13</text>
 <text x="156" y="133" fill="#edf5fc" font-size="17" font-weight="700">Repositorios</text>
 <text x="156" y="156" fill="#9cacc1" font-size="12">públicos</text>
 <rect x="416" y="92" width="368" height="94" rx="16" fill="#0d1b2d" stroke="#203047"/>
 <path d="M434 93H471" stroke="#c6f568" stroke-width="2" stroke-linecap="round"/>
 <g transform="translate(748 107) scale(0.79167)" fill="none" stroke="#c6f568" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 2.8 5.7 6.3.9-4.5 4.4 1.1 6.3-5.7-3-5.7 3 1.1-6.3L3 9.6l6.3-.9Z"/></g>
-<text x="436" y="156" fill="#c6f568" font-size="45" font-weight="700">N/D</text>
+<text x="436" y="156" fill="#c6f568" font-size="45" font-weight="700">2</text>
 <text x="540" y="133" fill="#edf5fc" font-size="17" font-weight="700">Stars recibidas</text>
 <text x="540" y="156" fill="#9cacc1" font-size="12">repos propios · sin forks</text>
 <rect x="800" y="92" width="368" height="94" rx="16" fill="#0d1b2d" stroke="#203047"/>
 <path d="M818 93H855" stroke="#b9a5ff" stroke-width="2" stroke-linecap="round"/>
 <g transform="translate(1132 107) scale(0.79167)" fill="none" stroke="#b9a5ff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="4" r="2"/><circle cx="18" cy="4" r="2"/><circle cx="12" cy="20" r="2"/><path d="M6 6v3a6 6 0 0 0 6 6m6-9v3a6 6 0 0 1-6 6v3"/></g>
-<text x="820" y="156" fill="#b9a5ff" font-size="45" font-weight="700">N/D</text>
+<text x="820" y="156" fill="#b9a5ff" font-size="45" font-weight="700">0</text>
 <text x="924" y="133" fill="#edf5fc" font-size="17" font-weight="700">Forks recibidos</text>
 <text x="924" y="156" fill="#9cacc1" font-size="12">repos propios · sin forks</text>
 <rect x="32" y="198" width="368" height="94" rx="16" fill="#0d1b2d" stroke="#203047"/>
 <path d="M50 199H87" stroke="#55d9ed" stroke-width="2" stroke-linecap="round"/>
 <g transform="translate(364 213) scale(0.79167)" fill="none" stroke="#55d9ed" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M3 21v-3a6 6 0 0 1 12 0v3m1-16a3 3 0 0 1 0 6m2 3a5 5 0 0 1 3 4v3"/></g>
-<text x="52" y="262" fill="#55d9ed" font-size="45" font-weight="700">N/D</text>
+<text x="52" y="262" fill="#55d9ed" font-size="45" font-weight="700">7</text>
 <text x="156" y="239" fill="#edf5fc" font-size="17" font-weight="700">Seguidores</text>
-<text x="156" y="262" fill="#9cacc1" font-size="12">Siguiendo a N/D</text>
+<text x="156" y="262" fill="#9cacc1" font-size="12">Siguiendo a 6</text>
 <rect x="416" y="198" width="368" height="94" rx="16" fill="#0d1b2d" stroke="#203047"/>
 <path d="M434 199H471" stroke="#c6f568" stroke-width="2" stroke-linecap="round"/>
 <g transform="translate(748 213) scale(0.79167)" fill="none" stroke="#c6f568" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m7 6-5 6 5 6m10-12 5 6-5 6m-3-15-4 18"/></g>
-<text x="436" y="262" fill="#c6f568" font-size="45" font-weight="700">8</text>
+<text x="436" y="262" fill="#c6f568" font-size="45" font-weight="700">9</text>
 <text x="540" y="239" fill="#edf5fc" font-size="17" font-weight="700">Repos con código</text>
 <text x="540" y="262" fill="#9cacc1" font-size="12">sin forks ni perfil</text>
 <rect x="800" y="198" width="368" height="94" rx="16" fill="#0d1b2d" stroke="#203047"/>
 <path d="M818 199H855" stroke="#b9a5ff" stroke-width="2" stroke-linecap="round"/>
 <g transform="translate(1132 213) scale(0.79167)" fill="none" stroke="#b9a5ff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5h14M8 2v6m9-3c-1 6-5 10-12 12m2-8c2 4 5 6 9 7m-1 5 3-8 3 8m-5-3h4"/></g>
-<text x="820" y="262" fill="#b9a5ff" font-size="45" font-weight="700">7</text>
+<text x="820" y="262" fill="#b9a5ff" font-size="45" font-weight="700">9</text>
 <text x="924" y="239" fill="#edf5fc" font-size="17" font-weight="700">Lenguajes</text>
 <text x="924" y="262" fill="#9cacc1" font-size="12">detectados por GitHub</text>
 <text x="32" y="316" fill="#9cacc1" font-size="12">Repos públicos · Stars y forks de repos originales · Código sin forks ni perfil · N/D: no disponible</text>
