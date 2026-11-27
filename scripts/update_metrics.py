@@ -14,9 +14,11 @@ from collections import Counter
 from datetime import datetime, timezone
 from html import escape
 import json
+import math
 import os
 from pathlib import Path
 import re
+import shutil
 import sys
 import tempfile
 from urllib.error import HTTPError, URLError
@@ -90,7 +92,10 @@ def check_repositories(profile, repos, username):
         if not isinstance(repo, dict):
             raise MetricsError("El listado de repositorios contiene una respuesta no válida.")
         name = repo.get("name")
-        owner = repo.get("owner", {}).get("login", "")
+        owner_data = repo.get("owner")
+        if not isinstance(owner_data, dict):
+            raise MetricsError("Falta el propietario de un repositorio.")
+        owner = owner_data.get("login", "")
         if not isinstance(name, str) or not REPO_PATTERN.fullmatch(name):
             raise MetricsError("Falta un nombre de repositorio válido.")
         if not isinstance(owner, str) or owner.lower() != username.lower():
@@ -136,6 +141,21 @@ def fetch_snapshot(username):
     }
 
 
+def optional_count(record, name):
+    """Missing social fields are unknown, never an invented zero."""
+    value = record.get(name)
+    if value is None:
+        return None
+    if type(value) is not int or value < 0:
+        raise MetricsError("GitHub devolvió un contador no válido: " + name + ".")
+    return value
+
+
+def sum_optional_counts(records, name):
+    values = [optional_count(record, name) for record in records]
+    return None if any(value is None for value in values) else sum(values)
+
+
 def aggregate(snapshot, username):
     if not isinstance(snapshot, dict):
         raise MetricsError("El snapshot no es válido.")
@@ -168,11 +188,33 @@ def aggregate(snapshot, username):
         {"name": name, "bytes": size, "percent": round(size / total_bytes * 100, 6)}
         for name, size in sorted(totals.items(), key=lambda item: (-item[1], item[0]))
     ]
+    profile = snapshot["profile"]
+    original_repos = [repo for repo in snapshot["repos"] if not repo["fork"]]
+    stars = sum_optional_counts(original_repos, "stargazers_count")
+    received_forks = sum_optional_counts(original_repos, "forks_count")
+    followers = optional_count(profile, "followers")
+    following = optional_count(profile, "following")
     return {
-        "schema_version": 1,
+        "schema_version": 2,
         "username": snapshot["profile"]["login"],
         "updated_at_utc": observed.astimezone(timezone.utc).isoformat(timespec="seconds"),
-        "public_repositories": snapshot["profile"]["public_repos"],
+        "public_repositories": profile["public_repos"],
+        "nonfork_public_repositories": len(original_repos),
+        "stars_received": stars,
+        "forks_received": received_forks,
+        "followers": followers,
+        "following": following,
+        "engagement_scope": {
+            "description": "Stars y forks recibidos en todos los repositorios públicos propios no fork, incluido el perfil.",
+            "repositories_counted": len(original_repos),
+            "excluded_forks": forks,
+        },
+        "data_availability": {
+            "stars_received": stars is not None,
+            "forks_received": received_forks is not None,
+            "followers": followers is not None,
+            "following": following is not None,
+        },
         "repository_count_scope": "Todos los repositorios públicos propios; incluye el repositorio de perfil y los forks públicos.",
         "language_scope": {
             "description": "Bytes de código en repositorios públicos propios, sin forks ni repositorio de perfil. Incluye repositorios archivados.",
@@ -191,166 +233,338 @@ def aggregate(snapshot, username):
     }
 
 
-def render_svg(metrics, dark):
-    bg, surface, text, muted, border, accent = (
-        ("#0B1220", "#101D2E", "#F4F8FB", "#9AAEC1", "#24374A", "#07E3E3")
-        if dark else ("#F4F8FB", "#FFFFFF", "#0B1220", "#536A7E", "#D8E5ED", "#007F86")
-    )
-    colors = [accent, "#648DFF", "#C49BFF", "#E5AF5F", "#7AB8A8", "#8494A4"]
-    all_langs = metrics["languages"]
-    shown = [dict(entry) for entry in all_langs[:5]]
-    if len(all_langs) > 5:
-        rest = sum(entry["bytes"] for entry in all_langs[5:])
-        shown.append({"name": "Otros", "bytes": rest, "percent": rest / metrics["total_public_code_bytes"] * 100})
+
+def palette(dark):
+    return {
+        "bg": "#07101f" if dark else "#f3f7fc",
+        "surface": "#0d1b2d" if dark else "#ffffff",
+        "text": "#edf5fc" if dark else "#10243b",
+        "muted": "#9cacc1" if dark else "#52677f",
+        "border": "#203047" if dark else "#d5dfeb",
+        "cyan": "#55d9ed" if dark else "#007d94",
+        "lime": "#c6f568" if dark else "#567700",
+        "violet": "#b9a5ff" if dark else "#7251b3",
+        "rose": "#f7a5c6" if dark else "#b54e79",
+        "gold": "#f2c76d" if dark else "#986510",
+        "blue": "#83afff" if dark else "#316dd3",
+        "other": "#65758c" if dark else "#8c9bb0",
+    }
+
+
+def format_count(value):
+    if value is None:
+        return "N/D"
+    if value < 1000:
+        return str(value)
+    if value < 1000000:
+        return (f"{value / 1000:.1f}".rstrip("0").rstrip(".") + "k").replace(".", ",")
+    return (f"{value / 1000000:.1f}".rstrip("0").rstrip(".") + "M").replace(".", ",")
+
+
+def format_bytes(value):
+    if value >= 1000000:
+        return f"{value / 1000000:.1f} MB".replace(".", ",")
+    if value >= 1000:
+        return f"{value / 1000:.1f} kB".replace(".", ",")
+    return str(value) + " B"
+
+
+def format_percent(value):
+    return "<0,1 %" if 0 < value < 0.1 else f"{value:.1f} %".replace(".", ",")
+
+
+def date_label(metrics):
     observed = madrid_datetime(metrics["updated_at_utc"])
-    date_es = f"{observed.day:02d} {MONTHS_ES[observed.month - 1]} {observed.year}"
-    desc = "; ".join(f"{entry['name']}: {entry['percent']:.2f}%" for entry in shown)
-    parts = [
-        '<svg xmlns="http://www.w3.org/2000/svg" width="900" height="330" viewBox="0 0 900 330" role="img" aria-labelledby="title desc">',
-        '<title id="title">Código público de ' + escape(metrics["username"]) + '</title>',
-        '<desc id="desc">' + escape(f"{metrics['public_repositories']} repositorios públicos. Distribución de bytes de código, excluidos forks y perfil: {desc}. Actualizado el {date_es}. No mide experiencia profesional ni dominio de lenguajes.") + '</desc>',
-        f'<rect x="1" y="1" width="898" height="328" rx="20" fill="{bg}" stroke="{border}"/>',
+    return f"{observed.day:02d} {MONTHS_ES[observed.month - 1]} {observed.year}"
+
+
+def short_text(value, max_chars):
+    return value if len(value) <= max_chars else value[:max_chars - 1] + "…"
+
+
+def svg_start(width, height, title, description, p):
+    return [
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc">',
+        '<title id="title">' + escape(title) + '</title>',
+        '<desc id="desc">' + escape(description) + '</desc>',
+        f'<rect x="1" y="1" width="{width-2}" height="{height-2}" rx="24" fill="{p["bg"]}" stroke="{p["border"]}"/>',
         '<g font-family="Arial, Helvetica, sans-serif">',
-        f'<text x="32" y="34" fill="{accent}" font-size="11" font-weight="700" letter-spacing="2.2">GITHUB · CÓDIGO PÚBLICO</text>',
-        f'<text x="32" y="72" fill="{text}" font-size="28" font-weight="700">Proyectos que puedes explorar.</text>',
-        f'<path d="M249 103V255" stroke="{border}"/>',
-        f'<text x="32" y="183" fill="{accent}" font-size="76" font-weight="700">{metrics["public_repositories"]}</text>',
-        f'<text x="36" y="212" fill="{text}" font-size="16" font-weight="700">Repositorios públicos</text>',
-        f'<text x="36" y="237" fill="{muted}" font-size="12">Incluye este perfil</text>',
-        f'<text x="282" y="113" fill="{text}" font-size="16" font-weight="700">Lenguajes del código público</text>',
-        f'<text x="282" y="134" fill="{muted}" font-size="12">Distribución por bytes · {len(all_langs)} lenguajes detectados</text>',
-        '<defs><clipPath id="bar"><rect x="282" y="151" width="580" height="12" rx="6"/></clipPath></defs>',
-        f'<rect x="282" y="151" width="580" height="12" rx="6" fill="{surface}"/>',
-        '<g clip-path="url(#bar)">',
     ]
-    pos = 282.0
-    total = metrics["total_public_code_bytes"]
-    for i, entry in enumerate(shown):
-        width = entry["bytes"] / total * 580 if total else 0
-        parts.append(f'<rect x="{pos:.4f}" y="151" width="{width:.4f}" height="12" fill="{colors[i]}"/>')
-        pos += width
-    parts.append('</g>')
-    for i, entry in enumerate(shown):
-        x = 282 + (i % 2) * 302
-        y = 193 + (i // 2) * 30
-        percent = "<0,1 %" if 0 < entry["percent"] < 0.1 else f"{entry['percent']:.1f} %".replace(".", ",")
-        name = entry["name"] if len(entry["name"]) < 23 else entry["name"][:21] + "…"
-        parts.extend([
-            f'<circle cx="{x + 5}" cy="{y - 4}" r="4" fill="{colors[i]}"/>',
-            f'<text x="{x + 18}" y="{y}" fill="{text}" font-size="13">{escape(name)}</text>',
-            f'<text x="{x + 268}" y="{y}" fill="{muted}" font-size="13" text-anchor="end">{escape(percent)}</text>',
-        ])
-    if not shown:
-        parts.append(f'<text x="282" y="201" fill="{muted}" font-size="14">GitHub no detecta código en los repositorios incluidos.</text>')
-    parts.extend([
-        f'<path d="M32 279H868" stroke="{border}"/>',
-        f'<text x="32" y="304" fill="{muted}" font-size="11">Sin forks ni perfil en los lenguajes. No mide nivel de dominio.</text>',
-        f'<text x="868" y="304" fill="{muted}" font-size="11" text-anchor="end">Actualizado: {date_es}</text>',
-        '</g></svg>',
-    ])
-    svg = "\n".join(parts) + "\n"
+
+
+def svg_finish(parts):
+    svg = "\n".join(parts + ["</g></svg>"]) + "\n"
     try:
         ET.fromstring(svg)
     except ET.ParseError:
-        raise MetricsError("No se pudo validar la tarjeta SVG. Se conserva el resultado anterior.") from None
+        raise MetricsError("No se pudo validar una tarjeta SVG. Se conservan las tarjetas anteriores.") from None
     return svg
+
+
+def icon(kind, x, y, color, size=25):
+    paths = {
+        "repo": '<path d="M5 3h14v17H7a2 2 0 0 1-2-2V3Zm0 13h14M9 7h6M9 10h4"/>',
+        "star": '<path d="m12 3 2.8 5.7 6.3.9-4.5 4.4 1.1 6.3-5.7-3-5.7 3 1.1-6.3L3 9.6l6.3-.9Z"/>',
+        "fork": '<circle cx="6" cy="4" r="2"/><circle cx="18" cy="4" r="2"/><circle cx="12" cy="20" r="2"/><path d="M6 6v3a6 6 0 0 0 6 6m6-9v3a6 6 0 0 1-6 6v3"/>',
+        "users": '<circle cx="9" cy="8" r="3"/><path d="M3 21v-3a6 6 0 0 1 12 0v3m1-16a3 3 0 0 1 0 6m2 3a5 5 0 0 1 3 4v3"/>',
+        "code": '<path d="m7 6-5 6 5 6m10-12 5 6-5 6m-3-15-4 18"/>',
+        "langs": '<path d="M5 5h14M8 2v6m9-3c-1 6-5 10-12 12m2-8c2 4 5 6 9 7m-1 5 3-8 3 8m-5-3h4"/>',
+    }
+    return f'<g transform="translate({x} {y}) scale({size/24:.5f})" fill="none" stroke="{color}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">{paths[kind]}</g>'
+
+
+def metric_tiles(metrics):
+    scope = metrics["language_scope"]
+    following = format_count(metrics.get("following"))
+    return [
+        ("repo", metrics["public_repositories"], "Repositorios", "públicos", "cyan"),
+        ("star", metrics.get("stars_received"), "Stars recibidas", "repos propios · sin forks", "lime"),
+        ("fork", metrics.get("forks_received"), "Forks recibidos", "repos propios · sin forks", "violet"),
+        ("users", metrics.get("followers"), "Seguidores", "Siguiendo a " + following, "cyan"),
+        ("code", scope["repositories_with_detected_code"], "Repos con código", "sin forks ni perfil", "lime"),
+        ("langs", len(metrics["languages"]), "Lenguajes", "detectados por GitHub", "violet"),
+    ]
+
+
+def render_dashboard(metrics, dark, mobile=False):
+    p = palette(dark)
+    width, height = (640, 620) if mobile else (1200, 330)
+    date = date_label(metrics)
+    readable = "; ".join(
+        f"{label}: {value if value is not None else 'no disponible'}"
+        for _, value, label, _, _ in metric_tiles(metrics)
+    )
+    description = (
+        f"Estadísticas públicas de {metrics['username']}. {readable}. "
+        f"Siguiendo: {metrics.get('following') if metrics.get('following') is not None else 'no disponible'}. "
+        "Repositorios incluye forks y perfil. Stars y forks recibidos solo en repositorios propios no fork, incluido el perfil. "
+        "Código y lenguajes excluyen forks y perfil. N/D significa que el dato no estaba disponible. "
+        f"Datos consultados el {date}."
+    )
+    parts = svg_start(width, height, "GitHub en números · " + metrics["username"], description, p)
+    left = 28 if mobile else 32
+    parts += [
+        f'<text x="{left}" y="33" fill="{p["cyan"]}" font-size="{14 if mobile else 12}" font-weight="700" letter-spacing="2">{escape(metrics["username"])} / GITHUB</text>',
+        f'<text x="{left}" y="68" fill="{p["text"]}" font-size="{32 if mobile else 29}" font-weight="700">GitHub en números.</text>',
+    ]
+    if mobile:
+        parts.append(f'<text x="612" y="33" text-anchor="end" fill="{p["muted"]}" font-size="13">{date}</text>')
+    else:
+        parts += [
+            f'<text x="1168" y="37" text-anchor="end" fill="{p["muted"]}" font-size="12">DATOS PÚBLICOS</text>',
+            f'<text x="1168" y="61" text-anchor="end" fill="{p["text"]}" font-size="14">{date}</text>',
+        ]
+    for i, (kind, value, label, subtitle, accent) in enumerate(metric_tiles(metrics)):
+        if mobile:
+            x, y, w, h = 28 + (i % 2) * 300, 99 + (i // 2) * 150, 284, 134
+        else:
+            x, y, w, h = 32 + (i % 3) * 384, 92 + (i // 3) * 106, 368, 94
+        parts += [
+            f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="16" fill="{p["surface"]}" stroke="{p["border"]}"/>',
+            f'<path d="M{x+18} {y+1}H{x+55}" stroke="{p[accent]}" stroke-width="2" stroke-linecap="round"/>',
+        ]
+        if mobile:
+            parts += [
+                icon(kind, x+w-45, y+20, p[accent], 25),
+                f'<text x="{x+20}" y="{y+61}" fill="{p[accent]}" font-size="49" font-weight="700">{format_count(value)}</text>',
+                f'<text x="{x+20}" y="{y+94}" fill="{p["text"]}" font-size="19" font-weight="700">{escape(label)}</text>',
+                f'<text x="{x+20}" y="{y+118}" fill="{p["muted"]}" font-size="14">{escape(subtitle)}</text>',
+            ]
+        else:
+            parts += [
+                icon(kind, x+w-36, y+15, p[accent], 19),
+                f'<text x="{x+20}" y="{y+64}" fill="{p[accent]}" font-size="45" font-weight="700">{format_count(value)}</text>',
+                f'<text x="{x+124}" y="{y+41}" fill="{p["text"]}" font-size="17" font-weight="700">{escape(label)}</text>',
+                f'<text x="{x+124}" y="{y+64}" fill="{p["muted"]}" font-size="12">{escape(subtitle)}</text>',
+            ]
+    if mobile:
+        parts += [
+            f'<path d="M28 557H612" stroke="{p["border"]}"/>',
+            f'<text x="28" y="580" fill="{p["muted"]}" font-size="13">Repos públicos · Stars y forks de repos originales.</text>',
+            f'<text x="28" y="601" fill="{p["muted"]}" font-size="13">Código sin forks ni perfil · N/D: dato no disponible.</text>',
+        ]
+    else:
+        parts.append(f'<text x="32" y="316" fill="{p["muted"]}" font-size="12">Repos públicos · Stars y forks de repos originales · Código sin forks ni perfil · N/D: no disponible</text>')
+    return svg_finish(parts)
+
+
+def render_svg(metrics, dark):
+    """Desktop dashboard; kept compatible with the original public helper."""
+    return render_dashboard(metrics, dark, mobile=False)
 
 
 def render_mobile_svg(metrics, dark):
-    """Readable portrait variant for the README's narrow-screen picture source."""
-    bg, surface, text, muted, border, accent = (
-        ("#0B1220", "#101D2E", "#F4F8FB", "#9AAEC1", "#24374A", "#07E3E3")
-        if dark else ("#F4F8FB", "#FFFFFF", "#0B1220", "#536A7E", "#D8E5ED", "#007F86")
-    )
-    colors = [accent, "#648DFF", "#C49BFF", "#E5AF5F", "#7AB8A8", "#8494A4"]
-    all_langs = metrics["languages"]
-    shown = [dict(entry) for entry in all_langs[:5]]
-    if len(all_langs) > 5:
-        rest = sum(entry["bytes"] for entry in all_langs[5:])
-        shown.append({"name": "Otros", "bytes": rest, "percent": rest / metrics["total_public_code_bytes"] * 100})
-    observed = madrid_datetime(metrics["updated_at_utc"])
-    date_es = f"{observed.day:02d} {MONTHS_ES[observed.month - 1]} {observed.year}"
-    desc = "; ".join(f"{entry['name']}: {entry['percent']:.2f}%" for entry in shown)
-    parts = [
-        '<svg xmlns="http://www.w3.org/2000/svg" width="480" height="440" viewBox="0 0 480 440" role="img" aria-labelledby="title desc">',
-        '<title id="title">Código público de ' + escape(metrics["username"]) + '</title>',
-        '<desc id="desc">' + escape(f"{metrics['public_repositories']} repositorios públicos. Distribución de bytes de código, excluidos forks y perfil: {desc}. Actualizado el {date_es}. No mide experiencia profesional ni dominio de lenguajes.") + '</desc>',
-        f'<rect x="1" y="1" width="478" height="438" rx="20" fill="{bg}" stroke="{border}"/>',
-        '<g font-family="Arial, Helvetica, sans-serif">',
-        f'<text x="28" y="37" fill="{accent}" font-size="16" font-weight="700" letter-spacing="1.5">GITHUB · CÓDIGO PÚBLICO</text>',
-        f'<text x="28" y="122" fill="{accent}" font-size="70" font-weight="700">{metrics["public_repositories"]}</text>',
-        f'<text x="142" y="94" fill="{text}" font-size="21" font-weight="700">Repositorios públicos</text>',
-        f'<text x="142" y="121" fill="{muted}" font-size="17">Incluye este perfil</text>',
-        f'<path d="M28 151H452" stroke="{border}"/>',
-        f'<text x="28" y="190" fill="{text}" font-size="23" font-weight="700">Lenguajes del código público</text>',
-        f'<text x="28" y="217" fill="{muted}" font-size="17">Distribución por bytes</text>',
-        '<defs><clipPath id="bar"><rect x="28" y="235" width="424" height="14" rx="7"/></clipPath></defs>',
-        f'<rect x="28" y="235" width="424" height="14" rx="7" fill="{surface}"/>',
-        '<g clip-path="url(#bar)">',
-    ]
-    pos = 28.0
+    return render_dashboard(metrics, dark, mobile=True)
+
+
+def render_languages_svg(metrics, dark, mobile=False):
+    p = palette(dark)
+    width, height = (640, 500) if mobile else (1200, 300)
+    colors = [p[k] for k in ("cyan", "lime", "violet", "blue", "rose", "gold")]
     total = metrics["total_public_code_bytes"]
-    for i, entry in enumerate(shown):
-        width = entry["bytes"] / total * 424 if total else 0
-        parts.append(f'<rect x="{pos:.4f}" y="235" width="{width:.4f}" height="14" fill="{colors[i]}"/>')
-        pos += width
-    parts.append('</g>')
-    for i, entry in enumerate(shown):
-        x = 28 + (i % 2) * 222
-        y = 285 + (i // 2) * 36
-        percent = "<0,1 %" if 0 < entry["percent"] < 0.1 else f"{entry['percent']:.1f} %".replace(".", ",")
-        name = entry["name"] if len(entry["name"]) < 13 else entry["name"][:11] + "…"
-        parts.extend([
-            f'<circle cx="{x + 5}" cy="{y - 6}" r="4" fill="{colors[i]}"/>',
-            f'<text x="{x + 17}" y="{y}" fill="{text}" font-size="17">{escape(name)}</text>',
-            f'<text x="{x + 202}" y="{y}" fill="{muted}" font-size="17" text-anchor="end">{escape(percent)}</text>',
-        ])
+    all_langs = metrics["languages"]
+    shown = all_langs[:6]
+    other_bytes = sum(item["bytes"] for item in all_langs[6:])
+    date = date_label(metrics)
+    description = (
+        f"Distribución de {total} bytes de código público de {metrics['username']}. "
+        + "; ".join(f"{item['name']}: {item['percent']:.4f} %" for item in all_langs)
+        + ". Se excluyen forks y repositorio de perfil; se incluyen archivados. "
+        "Los porcentajes describen código, no dominio de tecnologías. "
+        f"Fecha de consulta: {date}."
+    )
+    parts = svg_start(width, height, "Lenguajes del código público · " + metrics["username"], description, p)
+    left = 28 if mobile else 32
+    parts += [
+        f'<text x="{left}" y="33" fill="{p["cyan"]}" font-size="{13 if mobile else 12}" font-weight="700" letter-spacing="1.8">LENGUAJES / POR BYTES</text>',
+        f'<text x="{left}" y="68" fill="{p["text"]}" font-size="{32 if mobile else 29}" font-weight="700">El código, por dentro.</text>',
+        f'<text x="{width-left}" y="33" text-anchor="end" fill="{p["muted"]}" font-size="13">TOP {min(6,len(all_langs))} / {len(all_langs)}</text>',
+    ]
+    cx, cy, radius, stroke = (320, 184, 77, 18) if mobile else (150, 172, 76, 19)
+    circumference = math.tau * radius
+    parts.append(f'<circle cx="{cx}" cy="{cy}" r="{radius}" fill="none" stroke="{p["border"]}" stroke-width="{stroke}"/>')
+    segments = [(item["bytes"], colors[i]) for i, item in enumerate(shown)]
+    if other_bytes:
+        segments.append((other_bytes, p["other"]))
+    offset = 0.0
+    for amount, color in segments:
+        length = amount / total * circumference if total else 0.0
+        parts.append(
+            f'<circle cx="{cx}" cy="{cy}" r="{radius}" fill="none" stroke="{color}" stroke-width="{stroke}" '
+            f'stroke-dasharray="{length:.6f} {max(0.0,circumference-length):.6f}" stroke-dashoffset="{-offset:.6f}" '
+            f'transform="rotate(-90 {cx} {cy})"/>'
+        )
+        offset += length
+    parts += [
+        f'<text x="{cx}" y="{cy-9}" text-anchor="middle" fill="{p["muted"]}" font-size="12" letter-spacing="1.5">CÓDIGO</text>',
+        f'<text x="{cx}" y="{cy+23}" text-anchor="middle" fill="{p["text"]}" font-size="25" font-weight="700">{format_bytes(total)}</text>',
+    ]
+    for i, item in enumerate(shown):
+        if mobile:
+            x, y, w = 28 + (i % 2) * 300, 306 + (i // 2) * 59, 284
+            label_size, value_size, max_chars = 18, 17, 14
+        else:
+            x, y, w = 293 + (i % 2) * 449, 115 + (i // 2) * 59, 416
+            label_size, value_size, max_chars = 18, 17, 26
+        name = short_text(item["name"], max_chars)
+        percent = item["bytes"] / total * 100 if total else 0
+        parts += [
+            f'<circle cx="{x+5}" cy="{y-6}" r="4.5" fill="{colors[i]}"/>',
+            f'<text x="{x+19}" y="{y}" fill="{p["text"]}" font-size="{label_size}" font-weight="700">{escape(name)}</text>',
+            f'<text x="{x+w}" y="{y}" text-anchor="end" fill="{p["muted"]}" font-size="{value_size}">{escape(format_percent(percent))}</text>',
+            f'<rect x="{x}" y="{y+11}" width="{w}" height="5" rx="2.5" fill="{p["border"]}"/>',
+            f'<rect x="{x}" y="{y+11}" width="{max(0.7, w*percent/100):.4f}" height="5" rx="2.5" fill="{colors[i]}"/>',
+        ]
     if not shown:
-        parts.append(f'<text x="28" y="286" fill="{muted}" font-size="17">Sin lenguajes detectados por GitHub.</text>')
-    parts.extend([
-        f'<path d="M28 381H452" stroke="{border}"/>',
-        f'<text x="28" y="405" fill="{muted}" font-size="14">Sin forks ni perfil. No mide dominio.</text>',
-        f'<text x="28" y="426" fill="{muted}" font-size="14">Actualizado: {date_es}</text>',
-        '</g></svg>',
-    ])
-    svg = "\n".join(parts) + "\n"
+        parts += [
+            f'<text x="{320 if mobile else 293}" y="{325 if mobile else 150}" fill="{p["muted"]}" font-size="19" text-anchor="{"middle" if mobile else "start"}">Sin lenguajes detectados.</text>',
+            f'<text x="{320 if mobile else 293}" y="{352 if mobile else 178}" fill="{p["muted"]}" font-size="15" text-anchor="{"middle" if mobile else "start"}">GitHub no informa bytes de código.</text>',
+        ]
+    tail = f" · Otros: {format_percent(other_bytes / total * 100)}" if other_bytes and total else ""
+    if mobile:
+        parts += [
+            f'<path d="M28 457H612" stroke="{p["border"]}"/>',
+            f'<text x="28" y="478" fill="{p["muted"]}" font-size="12">Sin forks ni perfil · Incluye archivados{escape(tail)}</text>',
+            f'<text x="28" y="494" fill="{p["muted"]}" font-size="12">Consulta: {date} · Por bytes, no por nivel de dominio.</text>',
+        ]
+    else:
+        parts += [
+            f'<path d="M32 263H1168" stroke="{p["border"]}"/>',
+            f'<text x="32" y="286" fill="{p["muted"]}" font-size="12">Sin forks ni perfil · Incluye archivados · Por bytes, no por dominio{escape(tail)}</text>',
+            f'<text x="1168" y="286" text-anchor="end" fill="{p["muted"]}" font-size="12">{date}</text>',
+        ]
+    return svg_finish(parts)
+
+
+def validate_metrics(metrics):
+    """Also accepts the prior schema-1 aggregate for an honest dated seed."""
+    if not isinstance(metrics, dict) or not USERNAME_PATTERN.fullmatch(str(metrics.get("username", ""))):
+        raise MetricsError("El agregado no identifica un usuario válido.")
+    for key in ("public_repositories", "total_public_code_bytes"):
+        if type(metrics.get(key)) is not int or metrics[key] < 0:
+            raise MetricsError("Falta un contador válido en el agregado.")
+    for key in ("stars_received", "forks_received", "followers", "following"):
+        optional_count(metrics, key)
     try:
-        ET.fromstring(svg)
-    except ET.ParseError:
-        raise MetricsError("No se pudo validar la tarjeta móvil. Se conserva el resultado anterior.") from None
-    return svg
+        date_label(metrics)
+    except (KeyError, TypeError, ValueError):
+        raise MetricsError("Falta una fecha válida en el agregado.") from None
+    scope = metrics.get("language_scope")
+    if not isinstance(scope, dict):
+        raise MetricsError("Falta el ámbito de lenguajes.")
+    for key in ("repositories_queried", "repositories_with_detected_code"):
+        if type(scope.get(key)) is not int or scope[key] < 0:
+            raise MetricsError("El ámbito de lenguajes no está completo.")
+    if not scope["repositories_with_detected_code"] <= scope["repositories_queried"] <= metrics["public_repositories"]:
+        raise MetricsError("Los contadores de repositorios no coinciden.")
+    langs = metrics.get("languages")
+    if not isinstance(langs, list):
+        raise MetricsError("Falta la distribución de lenguajes.")
+    seen, total = set(), metrics["total_public_code_bytes"]
+    for item in langs:
+        if not isinstance(item, dict) or not isinstance(item.get("name"), str) or not item["name"].strip() or len(item["name"]) > 80:
+            raise MetricsError("Hay un lenguaje no válido en el agregado.")
+        if item["name"] in seen or type(item.get("bytes")) is not int or item["bytes"] <= 0:
+            raise MetricsError("Hay un tamaño o lenguaje duplicado en el agregado.")
+        seen.add(item["name"])
+        percent = item.get("percent")
+        if type(percent) not in (int, float) or not math.isfinite(percent) or total == 0 or abs(percent - item["bytes"] / total * 100) > 0.00001:
+            raise MetricsError("Los porcentajes no corresponden a los bytes de código.")
+    if sum(item["bytes"] for item in langs) != total:
+        raise MetricsError("La distribución de lenguajes está incompleta.")
 
 
 def write_outputs(metrics, output_dir):
-    # Build and validate all output content before creating/replacing any file.
+    # Finish every API validation and SVG render before touching prior outputs.
+    validate_metrics(metrics)
     contents = {
         "metrics-dark.svg": render_svg(metrics, True),
         "metrics-light.svg": render_svg(metrics, False),
         "metrics-mobile-dark.svg": render_mobile_svg(metrics, True),
         "metrics-mobile-light.svg": render_mobile_svg(metrics, False),
+        "languages-dark.svg": render_languages_svg(metrics, True),
+        "languages-light.svg": render_languages_svg(metrics, False),
+        "languages-mobile-dark.svg": render_languages_svg(metrics, True, mobile=True),
+        "languages-mobile-light.svg": render_languages_svg(metrics, False, mobile=True),
         "metrics.json": json.dumps(metrics, ensure_ascii=False, indent=2) + "\n",
     }
+    output_dir = Path(output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
-    staged = []
-    try:
+    with tempfile.TemporaryDirectory(dir=output_dir, prefix=".metrics-stage-") as temporary:
+        stage = Path(temporary)
+        staged, backups, replaced = {}, {}, []
         for filename, content in contents.items():
-            with tempfile.NamedTemporaryFile(mode="w", encoding="utf-8", dir=output_dir, prefix=".metrics-", delete=False) as handle:
-                staged.append((Path(handle.name), output_dir / filename))
+            path = stage / filename
+            with path.open("w", encoding="utf-8") as handle:
                 handle.write(content)
                 handle.flush()
                 os.fsync(handle.fileno())
-            os.chmod(handle.name, 0o644)
-        for temp_path, final_path in staged:
-            os.replace(temp_path, final_path)
-    finally:
-        for temp_path, _ in staged:
-            temp_path.unlink(missing_ok=True)
+            path.chmod(0o644)
+            staged[filename] = path
+            destination = output_dir / filename
+            if destination.exists():
+                backup = stage / (filename + ".previous")
+                shutil.copy2(destination, backup)
+                backups[filename] = backup
+        try:
+            for filename, path in staged.items():
+                os.replace(path, output_dir / filename)
+                replaced.append(filename)
+        except OSError:
+            # Restore the previous complete set if a local replacement fails.
+            for filename in reversed(replaced):
+                destination = output_dir / filename
+                if filename in backups:
+                    os.replace(backups[filename], destination)
+                else:
+                    destination.unlink(missing_ok=True)
+            raise
 
 
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--username", default="AdevTC")
-    parser.add_argument("--snapshot", type=Path, help="Snapshot local de respuestas públicas para reproducir una generación.")
+    parser.add_argument("--snapshot", type=Path, help="Snapshot local completo de respuestas públicas para reproducir la generación.")
     parser.add_argument("--output-dir", type=Path, default=ROOT / "assets")
     args = parser.parse_args(argv)
     try:
@@ -366,13 +580,17 @@ def main(argv=None):
         metrics = aggregate(snapshot, args.username)
         write_outputs(metrics, args.output_dir)
     except (MetricsError, OSError) as exc:
-        # Expected errors have safe messages; avoid printing raw OS/network details.
         message = str(exc) if isinstance(exc, MetricsError) else "No se pudo guardar la actualización local."
         print("Error: " + message, file=sys.stderr)
         return 1
-    print(f"Actualizadas 4 tarjetas y métricas: {metrics['public_repositories']} repositorios públicos, {len(metrics['languages'])} lenguajes.")
+    print(
+        f"Actualizadas 8 tarjetas y métricas: {metrics['public_repositories']} repositorios públicos, "
+        f"{len(metrics['languages'])} lenguajes, stars={format_count(metrics.get('stars_received'))}, "
+        f"seguidores={format_count(metrics.get('followers'))}."
+    )
     return 0
 
 
 if __name__ == "__main__":
     raise SystemExit(main())
+

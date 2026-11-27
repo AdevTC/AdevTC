@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
+<title id="title">Lenguajes del código público · AdevTC</title>
+<desc id="desc">Distribución de 17881139 bytes de código público de AdevTC. TypeScript: 75.8000 %; JavaScript: 12.1923 %; CSS: 9.8384 %; HTML: 1.9583 %; Java: 0.1781 %; PowerShell: 0.0186 %; Shell: 0.0142 %. Se excluyen forks y repositorio de perfil; se incluyen archivados. Los porcentajes describen código, no dominio de tecnologías. Fecha de consulta: 23 nov 2026.</desc>
+<rect x="1" y="1" width="1198" height="298" rx="24" fill="#07101f" stroke="#203047"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="32" y="33" fill="#55d9ed" font-size="12" font-weight="700" letter-spacing="1.8">LENGUAJES / POR BYTES</text>
+<text x="32" y="68" fill="#edf5fc" font-size="29" font-weight="700">El código, por dentro.</text>
+<text x="1168" y="33" text-anchor="end" fill="#9cacc1" font-size="13">TOP 6 / 7</text>
+<circle cx="150" cy="172" r="76" fill="none" stroke="#203047" stroke-width="19"/>
+<circle cx="150" cy="172" r="76" fill="none" stroke="#55d9ed" stroke-width="19" stroke-dasharray="361.961783 115.560300" stroke-dashoffset="-0.000000" transform="rotate(-90 150 172)"/>
+<circle cx="150" cy="172" r="76" fill="none" stroke="#c6f568" stroke-width="19" stroke-dasharray="58.220975 419.301108" stroke-dashoffset="-361.961783" transform="rotate(-90 150 172)"/>
+<circle cx="150" cy="172" r="76" fill="none" stroke="#b9a5ff" stroke-width="19" stroke-dasharray="46.980747 430.541337" stroke-dashoffset="-420.182758" transform="rotate(-90 150 172)"/>
+<circle cx="150" cy="172" r="76" fill="none" stroke="#83afff" stroke-width="19" stroke-dasharray="9.351519 468.170564" stroke-dashoffset="-467.163505" transform="rotate(-90 150 172)"/>
+<circle cx="150" cy="172" r="76" fill="none" stroke="#f7a5c6" stroke-width="19" stroke-dasharray="0.850378 476.671705" stroke-dashoffset="-476.515025" transform="rotate(-90 150 172)"/>
+<circle cx="150" cy="172" r="76" fill="none" stroke="#f2c76d" stroke-width="19" stroke-dasharray="0.088849 477.433235" stroke-dashoffset="-477.365403" transform="rotate(-90 150 172)"/>
+<circle cx="150" cy="172" r="76" fill="none" stroke="#65758c" stroke-width="19" stroke-dasharray="0.067832 477.454252" stroke-dashoffset="-477.454252" transform="rotate(-90 150 172)"/>
+<text x="150" y="163" text-anchor="middle" fill="#9cacc1" font-size="12" letter-spacing="1.5">CÓDIGO</text>
+<text x="150" y="195" text-anchor="middle" fill="#edf5fc" font-size="25" font-weight="700">17,9 MB</text>
+<circle cx="298" cy="109" r="4.5" fill="#55d9ed"/>
+<text x="312" y="115" fill="#edf5fc" font-size="18" font-weight="700">TypeScript</text>
+<text x="709" y="115" text-anchor="end" fill="#9cacc1" font-size="17">75,8 %</text>
+<rect x="293" y="126" width="416" height="5" rx="2.5" fill="#203047"/>
+<rect x="293" y="126" width="315.3280" height="5" rx="2.5" fill="#55d9ed"/>
+<circle cx="747" cy="109" r="4.5" fill="#c6f568"/>
+<text x="761" y="115" fill="#edf5fc" font-size="18" font-weight="700">JavaScript</text>
+<text x="1158" y="115" text-anchor="end" fill="#9cacc1" font-size="17">12,2 %</text>
+<rect x="742" y="126" width="416" height="5" rx="2.5" fill="#203047"/>
+<rect x="742" y="126" width="50.7200" height="5" rx="2.5" fill="#c6f568"/>
+<circle cx="298" cy="168" r="4.5" fill="#b9a5ff"/>
+<text x="312" y="174" fill="#edf5fc" font-size="18" font-weight="700">CSS</text>
+<text x="709" y="174" text-anchor="end" fill="#9cacc1" font-size="17">9,8 %</text>
+<rect x="293" y="185" width="416" height="5" rx="2.5" fill="#203047"/>
+<rect x="293" y="185" width="40.9279" height="5" rx="2.5" fill="#b9a5ff"/>
+<circle cx="747" cy="168" r="4.5" fill="#83afff"/>
+<text x="761" y="174" fill="#edf5fc" font-size="18" font-weight="700">HTML</text>
+<text x="1158" y="174" text-anchor="end" fill="#9cacc1" font-size="17">2,0 %</text>
+<rect x="742" y="185" width="416" height="5" rx="2.5" fill="#203047"/>
+<rect x="742" y="185" width="8.1467" height="5" rx="2.5" fill="#83afff"/>
+<circle cx="298" cy="227" r="4.5" fill="#f7a5c6"/>
+<text x="312" y="233" fill="#edf5fc" font-size="18" font-weight="700">Java</text>
+<text x="709" y="233" text-anchor="end" fill="#9cacc1" font-size="17">0,2 %</text>
+<rect x="293" y="244" width="416" height="5" rx="2.5" fill="#203047"/>
+<rect x="293" y="244" width="0.7408" height="5" rx="2.5" fill="#f7a5c6"/>
+<circle cx="747" cy="227" r="4.5" fill="#f2c76d"/>
+<text x="761" y="233" fill="#edf5fc" font-size="18" font-weight="700">PowerShell</text>
+<text x="1158" y="233" text-anchor="end" fill="#9cacc1" font-size="17">&lt;0,1 %</text>
+<rect x="742" y="244" width="416" height="5" rx="2.5" fill="#203047"/>
+<rect x="742" y="244" width="0.7000" height="5" rx="2.5" fill="#f2c76d"/>
+<path d="M32 263H1168" stroke="#203047"/>
+<text x="32" y="286" fill="#9cacc1" font-size="12">Sin forks ni perfil · Incluye archivados · Por bytes, no por dominio · Otros: &lt;0,1 %</text>
+<text x="1168" y="286" text-anchor="end" fill="#9cacc1" font-size="12">23 nov 2026</text>
+</g></svg>

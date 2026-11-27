@@ -1,0 +1,394 @@
+{
+  "schema_version": 1,
+  "username": "AdevTC",
+  "updated_at_utc": "2026-11-27T11:08:54Z",
+  "retrieved_at_utc": "2026-11-27T11:10:35Z",
+  "period": {
+    "start_date_utc": "2026-08-30",
+    "end_date_utc": "2026-11-27",
+    "calendar_days": 90,
+    "last_day_partial": true
+  },
+  "scope": "Commits públicos de autor AdevTC en ramas por defecto de repositorios propios, sin forks ni perfil; SHA deduplicadas. Incluye merges. No son contribuciones totales de GitHub. Días y rachas por fecha UTC del committer.",
+  "total_commits": 67,
+  "active_days": 12,
+  "best_streak_days_in_period": 3,
+  "repositories_checked": 12,
+  "active_repositories": 2,
+  "commits_by_repository": {
+    "AdevTC/fantasya-app": 0,
+    "AdevTC/Trivial": 0,
+    "AdevTC/ZoppyApp": 0,
+    "AdevTC/Zoppy": 0,
+    "AdevTC/opinao-app": 0,
+    "AdevTC/Manchester-Piti": 17,
+    "AdevTC/my-project": 0,
+    "AdevTC/2026-World-Cup-Simulator": 0,
+    "AdevTC/Xuntivo": 50,
+    "AdevTC/Portfolio_ATC_v1": 0,
+    "AdevTC/auditor-facturas": 0,
+    "AdevTC/JavaMySQLJDBC": 0
+  },
+  "days": [
+    {
+      "date": "2026-08-30",
+      "commits": 0
+    },
+    {
+      "date": "2026-08-31",
+      "commits": 0
+    },
+    {
+      "date": "2026-09-01",
+      "commits": 0
+    },
+    {
+      "date": "2026-09-02",
+      "commits": 0
+    },
+    {
+      "date": "2026-09-03",
+      "commits": 0
+    },
+    {
+      "date": "2026-09-04",
+      "commits": 0
+    },
+    {
+      "date": "2026-09-05",
+      "commits": 0
+    },
+    {
+      "date": "2026-09-06",
+      "commits": 0
+    },
+    {
+      "date": "2026-09-07",
+      "commits": 0
+    },
+    {
+      "date": "2026-09-08",
+      "commits": 0
+    },
+    {
+      "date": "2026-09-09",
+      "commits": 0
+    },
+    {
+      "date": "2026-09-10",
+      "commits": 0
+    },
+    {
+      "date": "2026-09-11",
+      "commits": 0
+    },
+    {
+      "date": "2026-09-12",
+      "commits": 0
+    },
+    {
+      "date": "2026-09-13",
+      "commits": 0
+    },
+    {
+      "date": "2026-09-14",
+      "commits": 0
+    },
+    {
+      "date": "2026-09-15",
+      "commits": 0
+    },
+    {
+      "date": "2026-09-16",
+      "commits": 0
+    },
+    {
+      "date": "2026-09-17",
+      "commits": 0
+    },
+    {
+      "date": "2026-09-18",
+      "commits": 0
+    },
+    {
+      "date": "2026-09-19",
+      "commits": 0
+    },
+    {
+      "date": "2026-09-20",
+      "commits": 0
+    },
+    {
+      "date": "2026-09-21",
+      "commits": 0
+    },
+    {
+      "date": "2026-09-22",
+      "commits": 0
+    },
+    {
+      "date": "2026-09-23",
+      "commits": 0
+    },
+    {
+      "date": "2026-09-24",
+      "commits": 1
+    },
+    {
+      "date": "2026-09-25",
+      "commits": 0
+    },
+    {
+      "date": "2026-09-26",
+      "commits": 0
+    },
+    {
+      "date": "2026-09-27",
+      "commits": 0
+    },
+    {
+      "date": "2026-09-28",
+      "commits": 0
+    },
+    {
+      "date": "2026-09-29",
+      "commits": 0
+    },
+    {
+      "date": "2026-09-30",
+      "commits": 0
+    },
+    {
+      "date": "2026-10-01",
+      "commits": 0
+    },
+    {
+      "date": "2026-10-02",
+      "commits": 0
+    },
+    {
+      "date": "2026-10-03",
+      "commits": 0
+    },
+    {
+      "date": "2026-10-04",
+      "commits": 0
+    },
+    {
+      "date": "2026-10-05",
+      "commits": 0
+    },
+    {
+      "date": "2026-10-06",
+      "commits": 0
+    },
+    {
+      "date": "2026-10-07",
+      "commits": 0
+    },
+    {
+      "date": "2026-10-08",
+      "commits": 0
+    },
+    {
+      "date": "2026-10-09",
+      "commits": 0
+    },
+    {
+      "date": "2026-10-10",
+      "commits": 0
+    },
+    {
+      "date": "2026-10-11",
+      "commits": 0
+    },
+    {
+      "date": "2026-10-12",
+      "commits": 0
+    },
+    {
+      "date": "2026-10-13",
+      "commits": 1
+    },
+    {
+      "date": "2026-10-14",
+      "commits": 0
+    },
+    {
+      "date": "2026-10-15",
+      "commits": 2
+    },
+    {
+      "date": "2026-10-16",
+      "commits": 2
+    },
+    {
+      "date": "2026-10-17",
+      "commits": 0
+    },
+    {
+      "date": "2026-10-18",
+      "commits": 0
+    },
+    {
+      "date": "2026-10-19",
+      "commits": 1
+    },
+    {
+      "date": "2026-10-20",
+      "commits": 2
+    },
+    {
+      "date": "2026-10-21",
+      "commits": 0
+    },
+    {
+      "date": "2026-10-22",
+      "commits": 2
+    },
+    {
+      "date": "2026-10-23",
+      "commits": 0
+    },
+    {
+      "date": "2026-10-24",
+      "commits": 2
+    },
+    {
+      "date": "2026-10-25",
+      "commits": 0
+    },
+    {
+      "date": "2026-10-26",
+      "commits": 0
+    },
+    {
+      "date": "2026-10-27",
+      "commits": 0
+    },
+    {
+      "date": "2026-10-28",
+      "commits": 0
+    },
+    {
+      "date": "2026-10-29",
+      "commits": 0
+    },
+    {
+      "date": "2026-10-30",
+      "commits": 4
+    },
+    {
+      "date": "2026-10-31",
+      "commits": 0
+    },
+    {
+      "date": "2026-11-01",
+      "commits": 0
+    },
+    {
+      "date": "2026-11-02",
+      "commits": 0
+    },
+    {
+      "date": "2026-11-03",
+      "commits": 0
+    },
+    {
+      "date": "2026-11-04",
+      "commits": 0
+    },
+    {
+      "date": "2026-11-05",
+      "commits": 0
+    },
+    {
+      "date": "2026-11-06",
+      "commits": 0
+    },
+    {
+      "date": "2026-11-07",
+      "commits": 0
+    },
+    {
+      "date": "2026-11-08",
+      "commits": 0
+    },
+    {
+      "date": "2026-11-09",
+      "commits": 0
+    },
+    {
+      "date": "2026-11-10",
+      "commits": 0
+    },
+    {
+      "date": "2026-11-11",
+      "commits": 0
+    },
+    {
+      "date": "2026-11-12",
+      "commits": 0
+    },
+    {
+      "date": "2026-11-13",
+      "commits": 0
+    },
+    {
+      "date": "2026-11-14",
+      "commits": 0
+    },
+    {
+      "date": "2026-11-15",
+      "commits": 0
+    },
+    {
+      "date": "2026-11-16",
+      "commits": 0
+    },
+    {
+      "date": "2026-11-17",
+      "commits": 0
+    },
+    {
+      "date": "2026-11-18",
+      "commits": 0
+    },
+    {
+      "date": "2026-11-19",
+      "commits": 0
+    },
+    {
+      "date": "2026-11-20",
+      "commits": 0
+    },
+    {
+      "date": "2026-11-21",
+      "commits": 0
+    },
+    {
+      "date": "2026-11-22",
+      "commits": 0
+    },
+    {
+      "date": "2026-11-23",
+      "commits": 0
+    },
+    {
+      "date": "2026-11-24",
+      "commits": 0
+    },
+    {
+      "date": "2026-11-25",
+      "commits": 25
+    },
+    {
+      "date": "2026-11-26",
+      "commits": 21
+    },
+    {
+      "date": "2026-11-27",
+      "commits": 4
+    }
+  ]
+}

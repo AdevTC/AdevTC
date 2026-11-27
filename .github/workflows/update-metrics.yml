@@ -6,6 +6,7 @@ on:
     branches: [main]
     paths:
       - scripts/update_metrics.py
+      - scripts/update_activity.py
       - .github/workflows/update-metrics.yml
   schedule:
     - cron: '17 6 * * 1' # Lunes 06:17 UTC; 07:17/08:17 en Madrid.
@@ -18,10 +19,9 @@ concurrency:
 
 jobs:
   update:
-    # Evita ejecuciones en forks y actualizaciones desde ramas de prueba.
     if: github.repository == 'AdevTC/AdevTC' && github.ref_name == github.event.repository.default_branch
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 10
     permissions:
       contents: write
     steps:
@@ -30,17 +30,24 @@ jobs:
         with:
           ref: ${{ github.event.repository.default_branch }}
 
-      - name: Generar tarjetas desde datos públicos
+      - name: Generar estadísticas y lenguajes públicos
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: python3 scripts/update_metrics.py --username AdevTC
 
-      - name: Guardar únicamente las tarjetas actualizadas
+      - name: Generar actividad pública de los últimos 90 días
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 scripts/update_activity.py --username AdevTC
+
+      - name: Guardar las tarjetas actualizadas
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add -- assets/metrics-dark.svg assets/metrics-light.svg assets/metrics-mobile-dark.svg assets/metrics-mobile-light.svg assets/metrics.json
+          git add -- assets/languages-dark.svg assets/languages-light.svg assets/languages-mobile-dark.svg assets/languages-mobile-light.svg
+          git add -- assets/activity-dark.svg assets/activity-light.svg assets/activity-mobile-dark.svg assets/activity-mobile-light.svg assets/activity.json
           if ! git diff --cached --quiet; then
-            git commit -m 'chore: actualizar métricas públicas del perfil'
+            git commit -m 'chore: actualizar estadísticas y actividad públicas del perfil'
             git push
           fi
