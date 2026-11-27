@@ -1,144 +1,158 @@
-<div align="center">
+<picture>
+  <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="./assets/hero-mobile-dark.svg" />
+  <source media="(max-width: 640px) and (prefers-color-scheme: light)" srcset="./assets/hero-mobile-light.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="./assets/hero-light.svg" />
+  <img src="./assets/hero-dark.svg" width="100%" alt="Adrián Tomás Cerdá — AdevTC. Del dato a la experiencia. SAP BTP, Cloud Integration y desarrollo web." />
+</picture>
+
+<h1 align="center">Adrián Tomás Cerdá · AdevTC</h1>
+
+<p align="center">
+  <strong>Responsable de BTP &amp; Integraciones en Alsea</strong><br />
+  Madrid, España · Ingeniería Informática en UNIR, en curso
+</p>
+
+<p align="center">
+  <a href="https://adriantomascerda.vercel.app"><img src="./assets/link-portfolio.svg" height="40" alt="Visitar mi portfolio" /></a>
+  <a href="https://www.linkedin.com/in/adriantomascerda/"><img src="./assets/link-linkedin.svg" height="40" alt="Conectar en LinkedIn" /></a>
+  <a href="mailto:adriantomascv@gmail.com"><img src="./assets/link-email.svg" height="40" alt="Escribirme por email" /></a>
+</p>
+
+<p align="center">
+  <a href="#perfil">Perfil</a> &nbsp; / &nbsp;
+  <a href="#proyectos">Proyectos</a> &nbsp; / &nbsp;
+  <a href="#stack">Stack</a> &nbsp; / &nbsp;
+  <a href="#trayectoria">Trayectoria</a> &nbsp; / &nbsp;
+  <a href="#contacto">Contacto</a>
+</p>
+
+## Perfil
+
+Me gusta trabajar en el punto donde **los procesos de negocio, los datos y las aplicaciones** se encuentran. Conecto sistemas empresariales con SAP y desarrollo productos web a partir de ideas propias. Me interesa entender lo que ocurre por dentro y cuidar la experiencia de quien está al otro lado.
+
+**↳ Conectar sistemas.** iFlows, Groovy, APIs y servicios con SAP CAP. He trabajado en integraciones financieras, procesos de RR. HH. e interoperabilidad sanitaria con HL7: transformar datos, seguir su recorrido y encontrar el origen de los errores.
+
+**↳ Construir productos.** Aplicaciones con TypeScript, React y Next.js. El fútbol, las comunidades y la competición inspiran varios de mis proyectos; me gusta llevar una idea desde el modelo de datos hasta una interfaz que apetezca usar.
+
+**↳ Seguir aprendiendo.** Compagino mi trabajo con el Grado en Ingeniería Informática en UNIR, con doble mención en Ingeniería del Software y Computación.
+
+## Proyectos
+
+Tres formas de llevar mis intereses al código.
+
+### 01 · Manchester Piti
+
+<a href="https://manchester-piti.vercel.app">
   <picture>
-    <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="./assets/header-mobile-dark.svg" />
-    <source media="(max-width: 640px) and (prefers-color-scheme: light)" srcset="./assets/header-mobile-light.svg" />
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/header-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="./assets/header-light.svg" />
-    <img src="./assets/header-dark.svg" width="100%" alt="Adrián Tomás Cerdá. Conecto sistemas. Construyo soluciones." />
+    <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="./assets/project-piti-mobile-dark.svg" />
+    <source media="(max-width: 640px) and (prefers-color-scheme: light)" srcset="./assets/project-piti-mobile-light.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/project-piti-light.svg" />
+    <img src="./assets/project-piti-dark.svg" width="100%" alt="Manchester Piti. Un equipo. Toda su temporada. Abrir la aplicación de fútbol 7." />
   </picture>
+</a>
 
-  <h1>Hola, soy Adrián 👋</h1>
-  <h3>SAP BTP &amp; Cloud Integration · Full Stack Developer</h3>
-
-  <p>
-    <strong>Responsable de BTP &amp; Integraciones en Alsea</strong><br />
-    Madrid, España · Ingeniería Informática en UNIR, en curso
-  </p>
-
-  <p>
-    <a href="https://adriantomascerda.vercel.app"><img src="./assets/link-portfolio.svg" height="40" alt="Visitar mi portfolio" /></a>
-    <a href="https://www.linkedin.com/in/adriantomascerda/"><img src="./assets/link-linkedin.svg" height="40" alt="Conectar conmigo en LinkedIn" /></a>
-    <a href="mailto:adriantomascv@gmail.com"><img src="./assets/link-email.svg" height="40" alt="Escribirme por email" /></a>
-  </p>
-
-  <p>
-    <a href="#sobre-mí">Sobre mí</a> ·
-    <a href="#proyectos-destacados">Proyectos</a> ·
-    <a href="#stack-técnico">Stack</a> ·
-    <a href="#experiencia">Experiencia</a> ·
-    <a href="#contacto">Contacto</a>
-  </p>
-</div>
-
----
-
-## Sobre mí
-
-Me gusta entender cómo encajan las piezas: **el proceso de negocio, los sistemas que lo sostienen y la persona que acaba utilizándolo**. Trabajo conectando aplicaciones empresariales con SAP y desarrollo productos web en los que cuido tanto la lógica como la experiencia de uso.
-
-Mi especialidad es **SAP BTP e Integration Suite**: iFlows, Groovy, APIs, transformaciones y gestión de errores. También he trabajado con **SAP CAP, Node.js y CDS**, y disfruto construyendo aplicaciones con **TypeScript, React, Next.js y Java**.
-
-- **Ahora, en Alsea:** BTP e integraciones entre sistemas, seguimiento de interfaces y resolución de incidencias.
-- **Experiencia aplicada:** interoperabilidad clínica con HL7, procesos de RR. HH. con SuccessFactors y SAP ECP, e integraciones financieras.
-- **Fuera del entorno corporativo:** convierto ideas propias en aplicaciones de fútbol, comunidades y herramientas web.
-- **Mi forma de trabajar:** entender el problema, desarrollar una solución clara y poder seguir lo que ocurre cuando llega a producción.
-
-> Una integración útil conecta procesos. Una buena aplicación hace que usarlos resulte sencillo.
-
-## Proyectos destacados
-
-### ⚽ Manchester Piti
-
-**Una plataforma para gestionar y seguir la vida de un equipo de fútbol 7.** Resultados, histórico, estadísticas y rankings, con un vestuario privado para disponibilidad, votaciones de MVP, actas y pizarra táctica.
+**La vida de un equipo de fútbol 7, en una aplicación.** Resultados, estadísticas, rankings e histórico, con un vestuario privado para disponibilidad, votaciones de MVP, actas y pizarra táctica.
 
 `React` `TypeScript` `Firebase` `Tailwind CSS` `Vite`
 
-**[Abrir Manchester Piti ↗](https://manchester-piti.vercel.app)** · [Explorar el código](https://github.com/AdevTC/Manchester-Piti)
+**[Ver aplicación ↗](https://manchester-piti.vercel.app)** &nbsp; · &nbsp; [Explorar código](https://github.com/AdevTC/Manchester-Piti)
 
-### 🏆 Fantasya
+### 02 · Fantasya
 
-**Ligas fantasy y comunidades privadas en una misma aplicación.** Gestión de temporadas, roles y funciones sociales para organizar la competición y mantener conectado al grupo.
+<a href="https://fantasya-app.vercel.app">
+  <picture>
+    <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="./assets/project-fantasya-mobile-dark.svg" />
+    <source media="(max-width: 640px) and (prefers-color-scheme: light)" srcset="./assets/project-fantasya-mobile-light.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/project-fantasya-light.svg" />
+    <img src="./assets/project-fantasya-dark.svg" width="100%" alt="Fantasya. La competición también se construye. Abrir la aplicación de ligas fantasy." />
+  </picture>
+</a>
+
+**Organizar una liga y mantener conectado al grupo.** Una aplicación de ligas fantasy y comunidades privadas, con gestión de temporadas, roles y funciones sociales alrededor de la competición.
 
 `React` `Firebase` `Tailwind CSS` `Vite`
 
-**[Abrir Fantasya ↗](https://fantasya-app.vercel.app)** · [Explorar el código](https://github.com/AdevTC/fantasya-app)
+**[Ver aplicación ↗](https://fantasya-app.vercel.app)** &nbsp; · &nbsp; [Explorar código](https://github.com/AdevTC/fantasya-app)
 
-### 🌍 World Cup 2026 Simulator
+### 03 · World Cup 2026 Simulator
 
-**Una herramienta para explorar cómo podría desarrollarse un Mundial.** Simulación de sorteos y fases de competición mediante una interfaz web interactiva.
+<a href="https://worldcup2026sim.vercel.app">
+  <picture>
+    <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="./assets/project-worldcup-mobile-dark.svg" />
+    <source media="(max-width: 640px) and (prefers-color-scheme: light)" srcset="./assets/project-worldcup-mobile-light.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/project-worldcup-light.svg" />
+    <img src="./assets/project-worldcup-dark.svg" width="100%" alt="World Cup Simulator. El torneo, escenario a escenario. Abrir el simulador del Mundial 2026." />
+  </picture>
+</a>
+
+**Un torneo, distintos escenarios.** Simulación de sorteos y fases de competición en una interfaz interactiva para explorar cómo cambia el recorrido del Mundial.
 
 `React` `Tailwind CSS` `Vite`
 
-**[Abrir el simulador ↗](https://worldcup2026sim.vercel.app)** · [Explorar el código](https://github.com/AdevTC/2026-World-Cup-Simulator)
+**[Abrir simulador ↗](https://worldcup2026sim.vercel.app)** &nbsp; · &nbsp; [Explorar código](https://github.com/AdevTC/2026-World-Cup-Simulator)
 
 <p align="center">
-  <b><a href="https://adriantomascerda.vercel.app/projects">Explorar mi portfolio →</a></b>
+  <a href="https://adriantomascerda.vercel.app/projects"><strong>Más proyectos en mi portfolio ↗</strong></a>
+  &nbsp; · &nbsp;
+  <a href="https://github.com/AdevTC?tab=repositories">Todos mis repositorios</a>
 </p>
 
-## Stack técnico
+## Stack
 
-### SAP e integración empresarial
+Las herramientas cambian según el problema. Estas forman parte de mi trabajo y mis proyectos.
 
-**SAP BTP · SAP Integration Suite / Cloud Integration (CPI) · SAP CAP · Groovy**
+| Para qué | Con qué trabajo |
+| :--- | :--- |
+| **Integrar sistemas** | SAP BTP · Integration Suite / Cloud Integration (CPI) · Groovy · SAP PI/PO · Cloud Connector |
+| **Crear servicios y modelar datos** | SAP CAP · Node.js · CDS · Java · Spring Boot |
+| **Construir interfaces** | TypeScript · JavaScript · React · Next.js · Angular · Tailwind CSS |
+| **Persistir información** | Firebase · MySQL · MongoDB |
+| **Desarrollar y comprobar** | Git · GitHub · Docker · Postman · SAP Business Application Studio · VS Code |
 
-iFlows · CDS · OData V2/V4 · REST · SOAP · HL7 · XML · JSON · XSD · WSDL · SAP Cloud Connector · SuccessFactors · SAP ECP · SAP PI/PO
+<details>
+<summary><strong>Protocolos, formatos y entornos de integración</strong></summary>
 
-### Desarrollo web y backend
+**APIs y conectividad:** OData V2/V4, REST, SOAP y SAP Cloud Connector.
 
-<p>
-  <img src="./assets/tech-typescript.svg" height="30" alt="TypeScript" />
-  <img src="./assets/tech-react.svg" height="30" alt="React" />
-  <img src="./assets/tech-nextjs.svg" height="30" alt="Next.js" />
-  <img src="./assets/tech-angular.svg" height="30" alt="Angular" />
-  <img src="./assets/tech-tailwind.svg" height="30" alt="Tailwind CSS" />
-  <img src="./assets/tech-nodejs.svg" height="30" alt="Node.js" />
-  <img src="./assets/tech-java.svg" height="30" alt="Java" />
-  <img src="./assets/tech-spring.svg" height="30" alt="Spring Boot" />
-</p>
+**Datos y contratos:** XML, JSON, XSD, WSDL y mensajes HL7.
 
-### Datos y herramientas
+**Procesos y entornos:** SuccessFactors, SAP ECP, finanzas, RR. HH. e interoperabilidad sanitaria.
 
-**MySQL · MongoDB · Firebase · Git · GitHub · Docker · Postman · SAP Business Application Studio · VS Code**
+</details>
 
-## Experiencia
+## Trayectoria
 
 ### Alsea · Responsable de BTP & Integraciones
 
-**Septiembre de 2026 — actualidad · Madrid**
+**Septiembre de 2026 — actualidad**
 
-Trabajo con SAP BTP e Integration Suite en la integración de sistemas empresariales, el seguimiento de interfaces y el análisis de incidencias. Me centro en entender el recorrido del dato, localizar el origen de los errores y coordinar su resolución con los equipos implicados.
+Trabajo con SAP BTP e Integration Suite en la integración de sistemas empresariales. Mi día a día incluye el seguimiento de interfaces, el análisis de incidencias y la coordinación con los equipos implicados para entender y resolver lo que ocurre en cada proceso.
 
 <details>
-<summary><b>Experiencia anterior · Sapas Consulting, Timestamp e Inetum</b></summary>
+<summary><strong>El recorrido hasta aquí · Sapas Consulting, Timestamp e Inetum</strong></summary>
 
-### Sapas Consulting · Grupo Costaisa
+#### Sapas Consulting · Grupo Costaisa
 
 **SAP Cloud Integrations & BTP Developer · 2025–2026**
 
-- Integraciones clínicas con **HL7 y SAP CPI**: altas, ingresos, traslados, fusión de historias clínicas y actividad de consultas.
-- Servicios **OData V4 con SAP CAP**, modelos **CDS** y lógica de negocio con **Node.js**.
-- Monitorización, trazabilidad, mantenimiento de iFlows y gestión de errores en procesos de interoperabilidad sanitaria.
+Integraciones clínicas con **HL7 y SAP CPI**: altas, ingresos, traslados, fusión de historias y consultas externas. Desarrollo de servicios **OData V4 con SAP CAP**, modelos **CDS** y lógica de negocio con **Node.js**.
 
-### Timestamp
+#### Timestamp
 
 **Consultor de Integración SAP · 2025**
 
-- iFlows de **RR. HH. y finanzas**, conectando **SuccessFactors y SAP ECP**.
-- Validaciones y transformaciones con **Groovy**, tratamiento de CSV en Base64 y generación de XML con **MarkupBuilder**.
-- Integraciones para datos de empleados, recibos de nómina y certificados de IRPF.
+Integraciones de **RR. HH. y finanzas** con **SuccessFactors y SAP ECP**. Validaciones y transformaciones con Groovy, tratamiento de CSV en Base64 y generación de XML para procesos de empleados, nóminas y certificados de IRPF.
 
-### Inetum
+#### Inetum
 
 **Consultor Junior de Integración SAP · 2023–2025**
 
-- Desarrollo y mantenimiento de integraciones con **SAP CPI y SAP PI/PO**.
-- APIs **REST/SOAP**, contratos **XSD/WSDL** y transformaciones de datos.
-- Conectividad entre sistemas locales y la nube mediante **SAP Cloud Connector**.
+Desarrollo y mantenimiento de integraciones con **SAP CPI y SAP PI/PO**, APIs REST/SOAP, contratos XSD/WSDL y conectividad entre sistemas locales y la nube mediante **SAP Cloud Connector**.
 
 </details>
 
 <details>
-<summary><b>Formación, idiomas y acreditaciones</b></summary>
+<summary><strong>Formación, idiomas y aprendizaje acreditado</strong></summary>
 
 - **Grado en Ingeniería Informática · UNIR**, en curso. Doble mención en Ingeniería del Software y Computación.
 - Formación en **Desarrollo de Aplicaciones Multiplataforma (DAM)** y **Desarrollo de Aplicaciones Web (DAW)** en Cesur.
@@ -152,30 +166,25 @@ Trabajo con SAP BTP e Integration Suite en la integración de sistemas empresari
 
 </details>
 
-## Código público
+<details>
+<summary><strong>Fuera del editor</strong></summary>
 
-<picture>
-  <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="./assets/metrics-mobile-dark.svg" />
-  <source media="(max-width: 640px) and (prefers-color-scheme: light)" srcset="./assets/metrics-mobile-light.svg" />
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/metrics-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="./assets/metrics-light.svg" />
-  <img src="./assets/metrics-dark.svg" width="100%" alt="Resumen de mis repositorios públicos y distribución de lenguajes por bytes de código. La fecha de actualización aparece en la tarjeta." />
-</picture>
+El fútbol ocupa bastante espacio en mi vida. **Manchester Piti** es mi equipo de fútbol 7 y una de las formas en las que el deporte y el desarrollo acaban encontrándose.
 
-Estas cifras reflejan mis repositorios públicos. La distribución de lenguajes describe el código disponible y no mide el dominio de cada tecnología; el trabajo de integración en entornos corporativos también forma parte de mi experiencia.
+También me interesan el **simracing**, los videojuegos y el universo. Muchas ideas empiezan así: algo que me gusta, una pregunta y ganas de construir una respuesta.
 
-[Explorar todos mis repositorios →](https://github.com/AdevTC?tab=repositories)
+</details>
 
 <details>
-<summary><b>A little about me · English</b></summary>
+<summary><strong>Read in English</strong></summary>
 
 I'm **Adrián Tomás Cerdá**, a software developer based in Madrid, currently responsible for **SAP BTP & Integrations at Alsea**.
 
-I work with **SAP Integration Suite, Groovy, APIs, SAP CAP and Node.js** to connect enterprise systems. My experience includes healthcare interoperability with **HL7**, HR processes with **SuccessFactors and SAP ECP**, and financial integrations.
+I connect enterprise systems using **SAP Integration Suite, Groovy, APIs, SAP CAP and Node.js**. My experience spans financial integrations, HR processes with SuccessFactors and SAP ECP, and healthcare interoperability with HL7.
 
-Alongside my integration work, I build web applications with **TypeScript, React and Next.js**. My public projects include a football team platform, a fantasy league application and a World Cup simulator.
+Alongside that work, I build web applications with **TypeScript, React and Next.js**. My personal projects bring together football, communities and competition.
 
-I'm studying **Computer Engineering at UNIR** and enjoy combining reliable backend logic with thoughtful user experiences.
+I'm studying **Computer Engineering at UNIR** and enjoy working across backend logic and user experience.
 
 [Portfolio](https://adriantomascerda.vercel.app) · [LinkedIn](https://www.linkedin.com/in/adriantomascerda/) · [Email](mailto:adriantomascv@gmail.com)
 
@@ -183,21 +192,13 @@ I'm studying **Computer Engineering at UNIR** and enjoy combining reliable backe
 
 ## Contacto
 
-¿Compartimos ideas sobre **SAP BTP, integraciones o desarrollo web**? Puedes encontrarme en [LinkedIn](https://www.linkedin.com/in/adriantomascerda/), visitar mi [portfolio](https://adriantomascerda.vercel.app) o escribirme a **[adriantomascv@gmail.com](mailto:adriantomascv@gmail.com)**.
+Si te interesa hablar de **SAP BTP, integraciones o una idea de producto**, podemos empezar por aquí:
 
-<details>
-<summary>🎮 Un último detalle</summary>
+**[LinkedIn ↗](https://www.linkedin.com/in/adriantomascerda/)** &nbsp; · &nbsp; **[Portfolio ↗](https://adriantomascerda.vercel.app)** &nbsp; · &nbsp; **[adriantomascv@gmail.com](mailto:adriantomascv@gmail.com)**
 
-Me gusta dejar pequeños Easter eggs en mis proyectos. Si visitas mi portfolio, prueba el código Konami:
-
-<p align="center"><kbd>↑</kbd> <kbd>↑</kbd> <kbd>↓</kbd> <kbd>↓</kbd> <kbd>←</kbd> <kbd>→</kbd> <kbd>←</kbd> <kbd>→</kbd> <kbd>B</kbd> <kbd>A</kbd></p>
-
-</details>
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/footer-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="./assets/footer-light.svg" />
-    <img src="./assets/footer-dark.svg" width="100%" alt="AdevTC. De la idea a la integración. Del código a la experiencia." />
-  </picture>
-</p>
+<picture>
+  <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="./assets/footer-mobile-dark.svg" />
+  <source media="(max-width: 640px) and (prefers-color-scheme: light)" srcset="./assets/footer-mobile-light.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="./assets/footer-light.svg" />
+  <img src="./assets/footer-dark.svg" width="100%" alt="AdevTC. ¿Y si construimos lo siguiente?" />
+</picture>

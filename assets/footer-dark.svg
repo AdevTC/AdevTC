@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="110" viewBox="0 0 1280 110" role="img" aria-labelledby="title">
-<title id="title">AdevTC. De la idea a la integración. Del código a la experiencia.</title>
-
-<rect x="1" y="1" width="1278" height="108" rx="18" fill="#0B1220" stroke="#22354B" />
-<rect x="32" y="34" width="4" height="42" rx="2" fill="#07E3E3" />
-<g font-family="Arial, Helvetica, sans-serif">
- <text x="57" y="64" font-size="23" font-weight="700" letter-spacing="2" fill="#F7FAFC">ADEVTC</text>
- <text x="1230" y="64" text-anchor="end" font-size="23" fill="#9AABBF">De la idea a la integración. Del código a la experiencia.</text>
-</g>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="150" viewBox="0 0 1200 150" role="img" aria-labelledby="title desc">
+<title id="title">AdevTC · ¿Y si construimos lo siguiente?</title>
+<desc id="desc">Una línea conecta los tres colores de la identidad visual de Adrián.</desc>
+<style>
+.route { stroke-dasharray: 3 13; animation: travel 9s linear infinite; }
+@keyframes travel { from { stroke-dashoffset: 64; } to { stroke-dashoffset: 0; } }
+@media (prefers-reduced-motion: reduce) { .route { animation: none; } }
+</style>
+<rect x="0.5" y="0.5" width="1199" height="149" rx="24" fill="#07101f" stroke="#22344c" /><path d="M 28 149 H 1172" fill="none" stroke="#22344c" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" /><g transform="translate(38 48) scale(0.9)"><path d="M 0 18 L 10 0 L 20 18 M 5 10 H 15" fill="none" stroke="#55d9ed" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round" /><path d="M 22 0 H 38 M 30 0 V 18" fill="none" stroke="#f1f5fb" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round" /><path d="M 53 2 C 40 -5 37 22 53 17" fill="none" stroke="#c6f568" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round" /></g><text x="107" y="68" fill="#f1f5fb" font-family="'Segoe UI',Arial,sans-serif" font-size="25" font-weight="650" >AdevTC</text><text x="38" y="111" fill="#f1f5fb" font-family="'Segoe UI',Arial,sans-serif" font-size="28" font-weight="500" letter-spacing="-0.4">¿Y si construimos lo siguiente?</text><path d="M 677 81 H 752 Q 768 81 768 65 V 55 Q 768 39 784 39 H 883 Q 899 39 899 55 V 96 Q 899 112 915 112 H 1007 Q 1023 112 1023 96 V 81 H 1158" fill="none" stroke="#22344c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><path d="M 677 81 H 752 Q 768 81 768 65 V 55 Q 768 39 784 39 H 883 Q 899 39 899 55 V 96 Q 899 112 915 112 H 1007 Q 1023 112 1023 96 V 81 H 1158" fill="none" stroke="#55d9ed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="route"/><circle cx="677" cy="81" r="5" fill="#55d9ed" /><circle cx="833" cy="39" r="5" fill="#c6f568" /><circle cx="969" cy="112" r="5" fill="#b9a5ff" /><circle cx="1158" cy="81" r="5" fill="#55d9ed" />
 </svg>
